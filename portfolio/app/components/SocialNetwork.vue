@@ -26,7 +26,12 @@ const socialNetworks = [
       :href="item.url"
       target="_blank"
     >
-      <img :src="item.src" :alt="item.name" class="w-6 h-6" />
+      <img
+        :src="item.src"
+        :alt="item.name"
+        class="w-6 h-6"
+        aria-describedby="redesSociales"
+      />
     </a>
   </div>
 </template>
