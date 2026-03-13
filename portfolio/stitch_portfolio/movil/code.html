@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio - Crafting Digital Experiences</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4257b",
+                        "background-light": "#f8f5f7",
+                        "background-dark": "#221017",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+<!-- Header / Top Bar -->
+<header class="sticky top-0 z-50 flex items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-4 py-3 border-b border-primary/10">
+<div class="flex items-center gap-2">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">bubble_chart</span>
+</div>
+<span class="text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100">Portfolio</span>
+</div>
+<div class="flex-1"></div>
+<button class="flex items-center justify-center p-2 text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="pb-24">
+<!-- Hero Section -->
+<section class="px-4 pt-8 pb-12">
+<div class="relative">
+<div class="relative z-10 space-y-4">
+<h1 class="text-4xl font-extrabold leading-tight tracking-tight text-slate-900 dark:text-slate-100">
+                        Crafting Digital <span class="text-primary">Experiences</span>
+</h1>
+<p class="text-lg text-slate-600 dark:text-slate-400 font-medium">
+                        Where Design Meets Code
+                    </p>
+</div>
+<div class="mt-8 relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl"></div>
+<div class="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
+<div class="relative rounded-xl overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl aspect-[4/3]">
+<img alt="Digital creative workspace" class="w-full h-full object-cover" data-alt="Modern workspace with laptop and coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARuJaH7bIptiVEJSt5NrzpB4-t3HhUX-iYZ3WrfpAObdd6Etx9mBOAMca67aBVVKPQC9DMLHFJQUMUPGvzX-nEVnN23y-qjnjFlnkONvhzF8AWZbksCLC8KfaYmpHbosu13faASftqZSx00IwxLsCfRXyyCALjStbrXBUAJ6j7U7PPKO9tPu9JWh4m_btytZy3Ve-DgElHJyHhsBxHttVTbeKfI812yYQq55UzthrTLJ7pWuSzX8C-O-WA3NlbQeFy6CdACDvcNrQ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Sobre Mí Section -->
+<section class="px-4 py-12 bg-primary/5">
+<div class="space-y-4">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">Sobre Mí</h2>
+<div class="w-12 h-1 bg-primary rounded-full"></div>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Soy un diseñador y desarrollador apasionado por crear interfaces que no solo se vean bien, sino que funcionen a la perfección. Con un enfoque minimalista y centrado en el usuario, transformo ideas complejas en realidades digitales elegantes.
+                </p>
+</div>
+</section>
+<!-- Mis Habilidades Section -->
+<section class="px-4 py-12">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-8">Mis Habilidades</h2>
+<div class="space-y-6">
+<!-- Skill 1 -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<span class="font-semibold text-slate-700 dark:text-slate-300">Design (UI/UX)</span>
+<span class="text-primary font-bold">95%</span>
+</div>
+<div class="h-2 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[95%]"></div>
+</div>
+</div>
+<!-- Skill 2 -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<span class="font-semibold text-slate-700 dark:text-slate-300">Development</span>
+<span class="text-primary font-bold">85%</span>
+</div>
+<div class="h-2 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[85%]"></div>
+</div>
+</div>
+<!-- Skill 3 -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<span class="font-semibold text-slate-700 dark:text-slate-300">Tools</span>
+<span class="text-primary font-bold">90%</span>
+</div>
+<div class="h-2 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[90%]"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Projects Section -->
+<section class="px-4 py-12">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6">Selected Projects</h2>
+<div class="grid grid-cols-1 gap-6">
+<!-- Project Card 1 -->
+<div class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800">
+<div class="aspect-video overflow-hidden">
+<img alt="E-commerce Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Modern analytics dashboard interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT_mvvKldI7BTZFUuherSu_TgPGoP5WNfMP8y7mXW6d12oVcMdQTYN5nBX4cYxvanp1GzwfadRqdz-xCZiI2hwvH5yAugaBL433ZHJfh22k57W1NuqqxbnUk6IMC1seeWjgZYiYNZN5D3F0vGjYlk8EXDsgh9EPyQf36DJwliyYMRkoYRdPvv8FPp05Q0XeQzpM23hP82KpWTu5nNY5V5jcYTQC4qconx1RiVhhSgB7ZuHEXZlVCpbMoP6w0bIcKe8NdJlxjJFe48"/>
+</div>
+<div class="p-4 space-y-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-100">Nova Dashboard</h3>
+<p class="text-sm text-slate-600 dark:text-slate-400">Plataforma de análisis de datos con enfoque en visualización limpia.</p>
+<a class="inline-flex items-center text-primary font-semibold text-sm gap-1 pt-2" href="#">
+                            Ver proyecto <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800">
+<div class="aspect-video overflow-hidden">
+<img alt="Finance App Design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Financial application user interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAscKYeti_slwFgO7g0tj0nMAvoWdW6YnYAImVG41ZsvtPLaMFPDScRPv8CAM5_SgCxHTR03odUaWityGAgqNZZBp_cA9t8KL51mJpNZZTgJmSalqIZZt6kE-93HwCUH3DJP5wDxlwH5G-lOdWQY29hm934NvI7xKFZ5nU9Up60sfu6U_2pbQH1BmCmR77TwGU8o0Wg1ZyWgfhO01RbNIpD1vfjJ_pm6JumsBoZhe_iMZ3P7ztyZ8slsO8fihYm7fjmNRe4YzxVwDc"/>
+</div>
+<div class="p-4 space-y-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-100">Mint Finance</h3>
+<p class="text-sm text-slate-600 dark:text-slate-400">Aplicación móvil de gestión financiera personal y ahorros.</p>
+<a class="inline-flex items-center text-primary font-semibold text-sm gap-1 pt-2" href="#">
+                            Ver proyecto <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-t border-primary/10 px-4 pb-6 pt-2">
+<div class="flex items-center justify-around">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Inicio</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Sobre Mí</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">bolt</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Skills</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">folder</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Proyectos</span>
+</a>
+</div>
+</nav>
+</body></html>

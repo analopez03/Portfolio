@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio | Graphic Designer &amp; Web Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f8a5c2",
+                        "accent": "#f4257b",
+                        "background-light": "#faf8f9",
+                        "background-dark": "#1a1617",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .progress-gradient {
+            background: linear-gradient(90deg, #a855f7 0%, #f4257b 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-6 md:px-20 lg:px-40 py-6 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+<span class="text-xl font-black tracking-tighter">Studio.</span>
+</div>
+<div class="flex flex-1 justify-end gap-8 items-center">
+<nav class="flex items-center gap-10">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">Work</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">About</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#">Contact</a>
+</nav>
+</div>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<div class="px-6 md:px-20 lg:px-40 py-24 md:py-40">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="flex flex-col gap-10">
+<div class="flex flex-col gap-6">
+<span class="text-primary font-bold uppercase tracking-[0.3em] text-sm">Designer &amp; Developer</span>
+<h1 class="text-slate-900 dark:text-slate-100 text-3xl md:text-5xl lg:text-5xl font-black leading-[1.2] tracking-tight">
+<span class="block mb-2">Crafting Digital Experiences:</span>
+                                Where <span class="text-primary">Design</span> Meets <span class="text-primary">Code</span>
+</h1>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-lg md:text-xl max-w-xl leading-relaxed">
+                            I bridge the gap between aesthetics and functionality, creating seamless, aesthetic, and functional digital products for modern brands.
+                        </p>
+<!-- Service Cards -->
+<div class="grid grid-cols-2 gap-6 mt-4">
+<div class="group p-6 bg-white dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+<span class="material-symbols-outlined text-primary mb-3 block text-3xl">pentagon</span>
+<h3 class="text-base font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wide">Branding</h3>
+</div>
+<div class="group p-6 bg-white dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+<span class="material-symbols-outlined text-primary mb-3 block text-3xl">lightbulb</span>
+<h3 class="text-base font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wide">Innovation</h3>
+</div>
+<div class="group p-6 bg-white dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+<span class="material-symbols-outlined text-primary mb-3 block text-3xl">terminal</span>
+<h3 class="text-base font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wide">Web Developer</h3>
+</div>
+<div class="group p-6 bg-white dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+<span class="material-symbols-outlined text-primary mb-3 block text-3xl">grid_view</span>
+<h3 class="text-base font-bold text-slate-800 dark:text-slate-200 uppercase tracking-wide">UI/UX Design</h3>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-10 bg-primary/10 rounded-[4rem] blur-3xl group-hover:bg-primary/20 transition-all duration-700"></div>
+<div class="relative aspect-[4/5] w-full bg-slate-200 dark:bg-slate-800 overflow-hidden ring-1 ring-black/5 transition-transform duration-700 hover:scale-[1.01] rounded-2xl border-4 border-primary shadow-[20px_20px_0px_0px_rgba(248,165,194,0.3)]">
+<img alt="Creative workplace with design tools" class="w-full h-full object-cover" data-alt="A clean modern minimalist desk setup with design tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIpYh5KhItY9Ix-nh5wdaVNIFrHFQW2Yb6L-TEzxFWptyh6fx9E09avvhPVOQn18NzWEo-aGSqnhtf89y5yiCY5jIyT_B78Rv8dyk-d5OxC-KjlWUdP9-Ynpq_KFgI0RqJxJx3GCPtcwLSmXsAFiQFcL3vjmn8fCjWhj2y2TqZK9MuWHkQvb4FiwBQTZVN585Oc7meJd3rA8KZOhU3WJMBZRh9VGI1qB2EQPIHUjQXqjj9h8Id28UWo0vp1qwJPOy4uxjQPah3Z7Y"/>
+</div>
+</div>
+</div>
+</div>
+<!-- About Me Section -->
+<section class="px-6 md:px-20 lg:px-40 py-32 bg-primary/5 border-t border-primary/10">
+<div class="max-w-4xl">
+<div class="flex flex-col gap-8">
+<div class="flex flex-col gap-4">
+<span class="text-primary font-bold uppercase tracking-[0.3em] text-sm">Background</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-4xl lg:text-5xl font-black leading-tight">Sobre Mí</h2>
+<div class="h-1.5 w-24 bg-primary rounded-full"></div>
+</div>
+<div class="flex flex-col gap-6 text-slate-600 dark:text-slate-400 text-lg md:text-xl leading-relaxed">
+<p>
+                                Soy un diseñador y desarrollador apasionado por crear soluciones digitales que no solo se ven increíbles, sino que también funcionan de manera impecable. Con más de cinco años de experiencia en el sector, he colaborado con marcas de diversos tamaños para transformar sus ideas en realidades tangibles a través del diseño de interfaces intuitivas y código robusto.
+                            </p>
+<p>
+                                Mi enfoque se centra en la intersección de la creatividad y la técnica. Creo firmemente que un buen diseño debe estar respaldado por una ingeniería sólida, y viceversa. Constantemente estoy explorando nuevas herramientas y lenguajes para asegurar que cada proyecto en el que trabajo esté a la vanguardia de la innovación digital.
+                            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills / Habilidades Section -->
+<section class="bg-white dark:bg-slate-900/30 px-6 md:px-20 lg:px-40 py-32 border-y border-primary/10">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="text-slate-900 dark:text-slate-100 text-4xl lg:text-5xl font-black leading-tight inline-block relative">
+                            Mis <span class="text-accent">Habilidades</span>
+<span class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-24 h-1.5 progress-gradient rounded-full"></span>
+</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Column 1: Diseño -->
+<div class="bg-primary/5 dark:bg-slate-800/50 p-8 rounded-3xl border border-primary/10">
+<h3 class="text-2xl font-black text-slate-800 dark:text-slate-100 mb-10">Diseño</h3>
+<div class="flex flex-col gap-8">
+<!-- Skill Item -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-bold text-slate-600 dark:text-slate-400">
+<span>Figma</span>
+<span class="text-accent">95%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full progress-gradient rounded-full" style="width: 95%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-bold text-slate-600 dark:text-slate-400">
+<span>Adobe XD</span>
+<span class="text-accent">90%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full progress-gradient rounded-full" style="width: 90%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-bold text-slate-600 dark:text-slate-400">
+<span>Illustrator</span>
+<span class="text-accent">85%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full progress-gradient rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-bold text-slate-600 dark:text-slate-400">
+<span>Photoshop</span>
+<span class="text-accent">88%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full progress-gradient rounded-full" style="width: 88%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 2: Desarrollo -->
+<div class="bg-primary/5 dark:bg-slate-800/50 p-8 rounded-3xl border border-primary/10">
+<h3 class="text-2xl font-black text-slate-800 dark:text-slate-100 mb-10">Desarrollo</h3>
+<div class="flex flex-col gap-8">
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-bold text-slate-600 dark:text-slate-400">
+<span>React</span>
+<span class="text-accent">92%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full progress-gradient rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-bold text-slate-600 dark:text-slate-400">
+<span>TypeScript</span>
+<span class="text-accent">88%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full progress-gradient rounded-full" style="width: 88%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-bold text-slate-600 dark:text-slate-400">
+<span>Tailwind CSS</span>
+<span class="text-accent">95%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full progress-gradient rounded-full" style="width: 95%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-bold text-slate-600 dark:text-slate-400">
+<span>Node.js</span>
+<span class="text-accent">82%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full progress-gradient rounded-full" style="width: 82%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 3: Herramientas -->
+<div class="bg-primary/5 dark:bg-slate-800/50 p-8 rounded-3xl border border-primary/10">
+<h3 class="text-2xl font-black text-slate-800 dark:text-slate-100 mb-10">Herramientas</h3>
+<div class="flex flex-col gap-8">
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-bold text-slate-600 dark:text-slate-400">
+<span>Git</span>
+<span class="text-accent">90%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full progress-gradient rounded-full" style="width: 90%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-bold text-slate-600 dark:text-slate-400">
+<span>Framer</span>
+<span class="text-accent">85%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full progress-gradient rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-bold text-slate-600 dark:text-slate-400">
+<span>Webflow</span>
+<span class="text-accent">80%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full progress-gradient rounded-full" style="width: 80%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-sm font-bold text-slate-600 dark:text-slate-400">
+<span>After Effects</span>
+<span class="text-accent">75%</span>
+</div>
+<div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full progress-gradient rounded-full" style="width: 75%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Projects Grid -->
+<section class="px-6 md:px-20 lg:px-40 py-32">
+<div class="flex justify-between items-end mb-20">
+<div>
+<h2 class="text-slate-900 dark:text-slate-100 text-5xl font-black mb-4">Selected Projects</h2>
+<div class="h-1.5 w-32 bg-primary rounded-full"></div>
+</div>
+<a class="text-slate-900 dark:text-slate-100 font-bold flex items-center gap-3 hover:text-primary transition-all group" href="#">
+<span class="text-lg">View All Projects</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+<!-- Project 1 Card -->
+<div class="group flex flex-col bg-white dark:bg-slate-900 rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 dark:border-slate-800">
+<div class="aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-800">
+<img alt="SaaS Platform UI Design" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" data-alt="Sleek interface design for a modern SaaS platform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvLD5hXftQKEEtDOxb2D8KcKCNyA6Z9hfseoLUlthu08dEfVGnLIrh5xagYzBv8XRS28cY-1ZhAUVBI1U0RooMs0mCqnrjKdXOnDSWi0a5aOVEiNdRT8IehOeMgdcvLU1W_OT5WjW8LjJvnC7fD4NPmUIZXhZh2Y1LUZ2iF8hQDT30y5_KKiHX1dTGS8u-K5OvAvMrgOpeYAc6Ln8q_6JKYsJTottuN27TMK9lWkLo6BukEZIK3puZgIisZTGSFthLwM-NKM1fY2o"/>
+</div>
+<div class="p-10 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<h3 class="text-2xl font-black text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Lumina Dashboard</h3>
+<span class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors text-3xl">north_east</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                                A comprehensive analytics dashboard designed for clarity and performance using React and Node.js.
+                            </p>
+<div class="flex items-center gap-4 mt-2">
+<span class="px-4 py-1.5 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest rounded-full">Web Development</span>
+</div>
+</div>
+</div>
+<!-- Project 2 Card -->
+<div class="group flex flex-col bg-white dark:bg-slate-900 rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 dark:border-slate-800">
+<div class="aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-800">
+<img alt="Minimalist Branding Project" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" data-alt="Elegant minimalist brand identity design for a cosmetics company" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Ma56ulRsn2WUENqjhikGsk5cvPr6lEpHoyjPfSAYmZtBFoqzoceQsYB5r_WGkxd4lMHP3r16KJ20IcoCOMdyovuFRa34D6Q61mFuODQ6xxIS_py0_PHSAGlUIyJbZk9Z1BoUCuXvSQaIMPdY0cR_88yFAMWjCKvqZ722sLkTqB-mACZSP6W9SKsl9Xklg95owaoT31kcieC83dI8ObxSjCMCdYtME3M6WTZ1OOUi-JInk59FmkMBf0Ou4FgeZhoyEXjWv_D1YBE"/>
+</div>
+<div class="p-10 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<h3 class="text-2xl font-black text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Aether Identity</h3>
+<span class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors text-3xl">north_east</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                                Clean and sophisticated visual identity system for a premium sustainable cosmetics line.
+                            </p>
+<div class="flex items-center gap-4 mt-2">
+<span class="px-4 py-1.5 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest rounded-full">Graphic Design</span>
+</div>
+</div>
+</div>
+<!-- Project 3 Card -->
+<div class="group flex flex-col bg-white dark:bg-slate-900 rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 dark:border-slate-800">
+<div class="aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-800">
+<img alt="Mobile App Interface" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" data-alt="Clean mobile application interface showing productivity features" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3mQEhGq-9c0GHo07xyTEMJeViGtyrz47-xJtaukqSC_WA7VlTlDhwAqMz6Zy4lcVwKWnIiKzB93L4hF4gYzugaSWyuitDhH_yW2h3GD8valoJ9iG4sTb2oaTXnvQEnQs19m9PmTztcgaiwaeGSJPnUKONakcZYuA9chj6Sznifepqz-be_hT2i6y1KcD6vwFQ7W_Zozw1HRwNhO79W2IRW1YXpQNce7tmlCcm-YYdsw4y16nyFAYmn1oY4Z-Hq_lmaP1S9bE_4MU"/>
+</div>
+<div class="p-10 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<h3 class="text-2xl font-black text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Flow App</h3>
+<span class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors text-3xl">north_east</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                                Intuitive productivity application focused on deep work and workflow management built with Flutter.
+                            </p>
+<div class="flex items-center gap-4 mt-2">
+<span class="px-4 py-1.5 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest rounded-full">UX/UI Design</span>
+</div>
+</div>
+</div>
+<!-- Project 4 Card -->
+<div class="group flex flex-col bg-white dark:bg-slate-900 rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 dark:border-slate-800">
+<div class="aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-800">
+<img alt="Editorial Design Layout" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" data-alt="Abstract gradient editorial design for a lifestyle magazine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzmGhArd-OnnPWC7J82z45Th2DsLhG5rUGSgPXSbEipwawKTqRvSj7eDhVcJzQLt80CtoJBP4rIc9bPirqQwcTLzyc5ZLUrudzclM9y1jPRJXPjRqtbUkCZRnUVcbHcQhFxciLvBxpX2q_mILqDPifOk6JrPNUlHVqoeS85IMESw2C8MCcV-TEiDiRl19Ox371g4Y1kVpeqfjCQn-a0u85ZlS0u_4NnsbBJuHeHZOx5zrnuOOd-pJ5lToYtkLLGgYm4cOVRv0KaBo"/>
+</div>
+<div class="p-10 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<h3 class="text-2xl font-black text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Nexus Magazine</h3>
+<span class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors text-3xl">north_east</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                                Layout design for a monthly digital publication exploring the intersection of art and technology.
+                            </p>
+<div class="flex items-center gap-4 mt-2">
+<span class="px-4 py-1.5 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest rounded-full">Editorial Design</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="px-6 md:px-20 lg:px-40 py-20 border-t border-primary/20 bg-background-light dark:bg-background-dark">
+<div class="flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="flex items-center gap-4 text-slate-900 dark:text-slate-100">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+<h2 class="text-2xl font-black tracking-tighter">Studio.</h2>
+</div>
+<div class="flex gap-12">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-3xl">language</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-3xl">code</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-3xl">palette</span></a>
+</div>
+<p class="text-slate-500 text-sm font-medium uppercase tracking-widest">
+                    © 2024 Studio. All rights reserved.
+                </p>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
