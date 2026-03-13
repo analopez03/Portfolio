@@ -45,6 +45,10 @@ const sortProjects = projects.slice(0, 3);
     <About />
   </section>
 
+  <section>
+    <SkillsSection />
+  </section>
+
   <section class="px-6 py-16 bg-pink-50 w-full">
     <div class="max-w-7xl mx-auto">
       <div class="flex justify-between items-center mb-8">
