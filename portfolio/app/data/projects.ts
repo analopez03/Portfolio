@@ -10,11 +10,12 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    name: "Proyecto 1",
-    description: "Descripción del proyecto 1",
-    src: "https://via.placeholder.com/150",
-    technology: ["Tecnología 1"],
-    link: "",
+    name: "Aplicación web Raices Viajeras",
+    description:
+      "Raíces Viajeras es una aplicación web desarrollada bajo metodología Agile, cuyo objetivo es ofrecer a los usuarios una forma sencilla yatractiva de descubrir, reservar y compartir experiencias de turismo sostenible.",
+    src: "../img/proyecto1.webp",
+    technology: ["Bootstrap"],
+    link: "https://github.com/PageCrafters/Raices-Viajeras",
   },
   {
     id: 2,
