@@ -59,4 +59,8 @@ const sortProjects = projects.slice(0, 3);
       </div>
     </div>
   </section>
+
+  <section>
+    <About />
+  </section>
 </template>
