@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div
-    class="card border-2 border-pink-400 rounded-xl shadow-xl p-9 max-w-md mx-auto overflow-hidden group"
+    class="card border-2 border-pink-400 rounded-xl shadow-xl p-9 max-w-lg mx-auto overflow-hidden group"
   >
     <div class="card-image-container -mx-9 -mt-9 mb-6 overflow-hidden h-56">
       <img
@@ -20,7 +20,7 @@ defineProps<{
 
     <div class="card-content">
       <h3 class="card-title text-2xl font-bold mb-3">{{ project.name }}</h3>
-      <p class="card-description text-base text-gray-600 mb-6 line-clamp-3">
+      <p class="card-description text-base text-gray-600 mb-6">
         {{ project.description }}
       </p>
 
