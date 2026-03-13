@@ -8,24 +8,27 @@ defineProps<{
 
 <template>
   <div
-    class="card border-2 border-pink-400 rounded-xl shadow-xl p-8 max-w-xs mx-auto"
+    class="card border-2 border-pink-400 rounded-xl shadow-xl p-9 max-w-lg mx-auto overflow-hidden group"
   >
-    <img
-      :src="project.src"
-      alt="Imagen del proyecto"
-      class="card-image w-full h-40 object-cover rounded-lg mb-4"
-    />
+    <div class="card-image-container -mx-9 -mt-9 mb-6 overflow-hidden h-56">
+      <img
+        :src="project.src"
+        alt="Imagen del proyecto"
+        class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+      />
+    </div>
+
     <div class="card-content">
-      <h3 class="card-title text-xl font-bold mb-2">{{ project.name }}</h3>
-      <p class="card-description text-sm text-gray-600 mb-4 line-clamp-2">
+      <h3 class="card-title text-2xl font-bold mb-3">{{ project.name }}</h3>
+      <p class="card-description text-base text-gray-600 mb-6">
         {{ project.description }}
       </p>
 
-      <div class="flex flex-wrap gap-2 mb-4">
+      <div class="flex flex-wrap gap-2 mb-6">
         <span
           v-for="tech in project.technology"
           :key="tech"
-          class="text-[10px] px-2 py-1 bg-pink-100 text-pink-600 rounded-full font-semibold uppercase"
+          class="text-xs px-3 py-1 bg-pink-100 text-pink-600 rounded-full font-semibold uppercase"
         >
           {{ tech }}
         </span>
@@ -35,9 +38,10 @@ defineProps<{
         v-if="project.link"
         :href="project.link"
         target="_blank"
-        class="card-link text-sm text-pink-500 font-bold hover:underline"
-        >Ver Proyecto</a
+        class="card-link text-base text-pink-500 font-bold hover:underline inline-block"
       >
+        Ver Proyecto →
+      </a>
     </div>
   </div>
 </template>
