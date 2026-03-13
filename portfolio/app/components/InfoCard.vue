@@ -3,8 +3,8 @@ const cards = [
   { title: "BRANDING", src: "../img/almuerzo-cohete.svg" },
   { title: "INNOVATION", src: "../img/destellos.svg" },
   { title: "WEB DEVELOPER", src: "../img/codigo-sencillo.svg" },
-  { title: "UI/UX DESIGN", src: "../img/paleta.svg" }
-]
+  { title: "UI/UX DESIGN", src: "../img/paleta.svg" },
+];
 </script>
 
 <template>
