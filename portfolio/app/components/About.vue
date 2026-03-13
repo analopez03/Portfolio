@@ -3,7 +3,7 @@
 <template>
   <section id="about" class="w-full px-6 py-12 bg-pink-50" role="region" aria-label="Sobre mí - Diseñadora Gráfica">
     <div class="max-w-7xl mx-auto p-6">
-      <h2 class="text-3xl font-bold mb-6 border-b-4 border-pink-400 inline-block" role="heading" aria-level="2">
+      <h2 class="text-3xl font-bold mb-6 border-b-4" role="heading" aria-level="2">
         Sobre mí
       </h2>
 
