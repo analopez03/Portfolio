@@ -1,9 +1,14 @@
+<script setup lang="ts">
+import { projects } from "~/data/projects";
+
+const sortProjects = projects.slice(0, 3);
+</script>
+
 <template>
-  <section class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
-
-    <!-- LEFT -->
+  <section
+    class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center"
+  >
     <div>
-
       <p class="text-sm tracking-widest text-pink-500 font-semibold mb-4">
         DESIGNER & DEVELOPER
       </p>
@@ -11,8 +16,8 @@
       <h1 class="text-5xl font-bold leading-tight mb-6">
         Crafting Digital Experiences:
         <br />
-        Where <span class="text-pink-400">Design</span>
-        Meets <span class="text-pink-400">Code</span>
+        Where <span class="text-pink-400">Design</span> Meets
+        <span class="text-pink-400">Code</span>
       </h1>
 
       <p class="text-gray-500 mb-8 max-w-lg">
@@ -21,19 +26,37 @@
       </p>
 
       <InfoCard />
-
     </div>
 
-    <!-- RIGHT IMAGE -->
     <div class="relative flex justify-center">
-
-      <div class="absolute inset-0 bg-pink-200 rounded-2xl translate-x-4 translate-y-4"></div>
+      <div
+        class="absolute inset-0 bg-pink-200 rounded-2xl translate-x-4 translate-y-4"
+      ></div>
 
       <img
         src="/img/perro.webp"
         alt="Perro"
-        class="relative rounded-2xl border-2 border-pink-400"
+        class="relative rounded-2xl border-4 border-pink-400"
       />
+    </div>
+  </section>
+
+  <section class="px-6 py-16 bg-pink-50 w-full">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-3xl font-bold">Proyectos Destacados</h2>
+
+        <NuxtLink
+          to="/project"
+          class="text-pink-500 font-medium hover:text-pink-600 transition-colors"
+        >
+          Ver todos los proyectos →
+        </NuxtLink>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <CardProject v-for="p in sortProjects" :key="p.id" :project="p" />
+      </div>
     </div>
   </section>
 </template>

@@ -4,7 +4,9 @@
   <div class="min-h-screen flex flex-col">
     <header class="bg-pink-50 px-5 grid grid-cols-9 items-stretch h-20">
       <div class="col-span-4 flex justify-center items-center">
-        <img src="../../img/postgre.svg" alt="Logo" class="h-12 w-auto" />
+        <nuxt-link to="/">
+          <img src="../../img/postgre.svg" alt="Logo" class="h-12 w-auto" />
+        </nuxt-link>
       </div>
 
       <nav class="col-span-5 flex justify-center items-stretch mr-8">
@@ -21,7 +23,7 @@
           Contacto
         </nuxt-link>
         <nuxt-link
-          to="/proyects"
+          to="/project"
           class="flex items-center px-6 hover:bg-pink-100 transition-colors"
         >
           Trabajos
