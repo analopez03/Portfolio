@@ -17,7 +17,7 @@
           Sobre mi
         </nuxt-link>
         <nuxt-link
-          to="/contact"
+          to="#contact"
           class="flex items-center px-6 hover:bg-pink-100 transition-colors"
         >
           Contacto
@@ -35,7 +35,7 @@
       <slot />
     </main>
 
-    <footer class="bg-pink-50 text-center py-4">
+    <footer class="bg-pink-50 text-center py-4" id="contact" role="contentinfo">
       <p>&copy; 2026 Portafolio. Todos los derechos reservados.</p>
       <SocialNetwork />
     </footer>

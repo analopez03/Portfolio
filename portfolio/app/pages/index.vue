@@ -41,10 +41,14 @@ const sortProjects = projects.slice(0, 3);
     </div>
   </section>
 
+  <section>
+    <About />
+  </section>
+
   <section class="px-6 py-16 bg-pink-50 w-full">
     <div class="max-w-7xl mx-auto">
       <div class="flex justify-between items-center mb-8">
-        <h2 class="text-3xl font-bold">Proyectos Destacados</h2>
+        <h2 class="text-3xl font-bold border-b-4 border-pink-400">Proyectos Destacados</h2>
 
         <NuxtLink
           to="/project"
@@ -58,9 +62,5 @@ const sortProjects = projects.slice(0, 3);
         <CardProject v-for="p in sortProjects" :key="p.id" :project="p" />
       </div>
     </div>
-  </section>
-
-  <section>
-    <About />
   </section>
 </template>
