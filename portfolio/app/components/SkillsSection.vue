@@ -36,7 +36,7 @@ const skills = [
   <section class="py-20 px-6 max-w-7xl mx-auto">
     <TheTitle>
       Mis
-      <template #highlight>Habilidades</template>
+      <template #pinkTitle>Habilidades</template>
     </TheTitle>
 
     <div class="grid md:grid-cols-3 gap-8">

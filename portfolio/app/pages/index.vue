@@ -54,7 +54,7 @@ const sortProjects = projects.slice(0, 3);
       <div class="flex justify-between items-center mb-8">
         <TheTitle>
           Proyectos
-          <template #highlight>destacados</template>
+          <template #pinkTitle>destacados</template>
         </TheTitle>
 
         <NuxtLink
