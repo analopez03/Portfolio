@@ -7,6 +7,7 @@
         <nuxt-link to="/">
           <img src="../../img/postgre.svg" alt="Logo" class="h-12 w-auto" />
         </nuxt-link>
+        <h1 class="ml-2">Ana López De Ahumada</h1>
       </div>
 
       <nav class="col-span-5 flex justify-center items-stretch mr-8">

@@ -52,7 +52,10 @@ const sortProjects = projects.slice(0, 3);
   <section class="px-6 py-16 bg-pink-50 w-full">
     <div class="max-w-7xl mx-auto">
       <div class="flex justify-between items-center mb-8">
-        <h2 class="text-3xl font-bold border-b-4 border-pink-400">Proyectos Destacados</h2>
+        <TheTitle>
+          Proyectos
+          <template #highlight>destacados</template>
+        </TheTitle>
 
         <NuxtLink
           to="/project"
