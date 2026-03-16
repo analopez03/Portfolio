@@ -10,7 +10,7 @@
     <div class="max-w-7xl mx-auto p-6">
       <TheTitle>
         Sobre
-        <template #highlight>mi</template>
+        <template #pinkTitle>mi</template>
       </TheTitle>
 
       <p class="text-gray-600 leading-relaxed">
