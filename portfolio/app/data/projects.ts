@@ -19,7 +19,7 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    name: "Proyecto 2",
+    name: "Troquelado ",
     description: "Descripción del proyecto 2",
     src: "https://via.placeholder.com/150",
     technology: ["Illustrator"],
