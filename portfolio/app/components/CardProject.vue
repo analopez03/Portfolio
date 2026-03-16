@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Project } from "~/data/projects";
+import type { Project } from "~/data/interfaceProjects";
 
 defineProps<{
   project: Project;
