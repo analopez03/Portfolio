@@ -8,9 +8,11 @@ defineProps<{
 
 <template>
   <div
-    class="card border-2 border-pink-400 rounded-xl shadow-xl p-9 max-w-lg mx-auto overflow-hidden group"
+    class="card border-2 border-pink-400 rounded-xl shadow-xl p-9 mx-auto overflow-hidden group flex flex-col h-full w-full"
   >
-    <div class="card-image-container -mx-9 -mt-9 mb-6 overflow-hidden h-56">
+    <div
+      class="card-image-container -mx-9 -mt-9 mb-6 overflow-hidden h-56 shrink-0"
+    >
       <img
         :src="project.src"
         alt="Imagen del proyecto"
@@ -18,9 +20,10 @@ defineProps<{
       />
     </div>
 
-    <div class="card-content">
+    <div class="card-content flex flex-col flex-grow">
       <h3 class="card-title text-2xl font-bold mb-3">{{ project.name }}</h3>
-      <p class="card-description text-base text-gray-600 mb-6">
+
+      <p class="card-description text-base text-gray-600 mb-6 flex-grow">
         {{ project.description }}
       </p>
 
@@ -38,7 +41,7 @@ defineProps<{
         v-if="project.link"
         :href="project.link"
         target="_blank"
-        class="card-link text-base text-pink-500 font-bold hover:underline inline-block"
+        class="card-link text-base text-pink-500 font-bold hover:underline inline-block mt-auto"
       >
         Ver Proyecto →
       </a>
