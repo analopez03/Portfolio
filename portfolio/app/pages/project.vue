@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { projects } from "~/data/projects";
+import projectsData from "~/data/project.json";
+import type { Project } from "~/data/interfaceProjects";
+
+const projects = projectsData as Project[];
 </script>
 
 <template>
