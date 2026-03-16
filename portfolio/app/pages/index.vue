@@ -3,7 +3,7 @@ import projectsData from "~/data/project.json";
 import type { Project } from "~/data/interfaceProjects";
 
 const projects = projectsData as Project[];
-
+11
 const sortProjects = projects.slice(0, 3);
 </script>
 
