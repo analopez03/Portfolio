@@ -65,7 +65,7 @@ const sortProjects = projects.slice(0, 3);
         </NuxtLink>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
         <CardProject v-for="p in sortProjects" :key="p.id" :project="p" />
       </div>
     </div>
