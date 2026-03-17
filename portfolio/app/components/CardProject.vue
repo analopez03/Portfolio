@@ -51,6 +51,7 @@ defineProps<{
           :href="project.link"
           target="_blank"
           class="text-pink-500 font-bold hover:underline text-sm flex items-center"
+          rel="noopener noreferrer"
         >
           Web externa ↗
         </a>
