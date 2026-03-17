@@ -7,19 +7,6 @@ const sortProjects = projects.slice(0, 3);
 </script>
 
 <template>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
   <section
     class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center"
   >
@@ -48,7 +35,7 @@ const sortProjects = projects.slice(0, 3);
         class="absolute inset-0 bg-pink-200 rounded-2xl translate-x-4 translate-y-4"
       ></div>
 
-      <img
+      <NuxtImg
         src="/img/perro.webp"
         alt="Perro"
         class="relative rounded-2xl border-4 border-pink-400"
