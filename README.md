@@ -1,4 +1,3 @@
-# Porfolio
 # Hola, soy Ana López
 
 ### [Front-end Developer / Designer]
