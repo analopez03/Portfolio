@@ -37,14 +37,24 @@ defineProps<{
         </span>
       </div>
 
-      <a
-        v-if="project.link"
-        :href="project.link"
-        target="_blank"
-        class="card-link text-base text-pink-500 font-bold hover:underline inline-block mt-auto"
-      >
-        Ver Proyecto →
-      </a>
+      <div class="flex items-center gap-4 mt-auto">
+        <NuxtLink
+          v-if="!project.link"
+          :to="`/project/${project.id}`"
+          class="text-pink-500 font-bold hover:underline text-sm flex"
+        >
+          Ver proyecto →
+        </NuxtLink>
+
+        <a
+          v-if="project.link"
+          :href="project.link"
+          target="_blank"
+          class="text-pink-500 font-bold hover:underline text-sm flex items-center"
+        >
+          Web externa ↗
+        </a>
+      </div>
     </div>
   </div>
 </template>
