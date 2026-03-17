@@ -17,10 +17,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # Configuramos la carpeta raíz del proyecto Nuxt
     defaults:
       run:
-        working-directory: ./portfolio/app
+        # Ajustado a tu ruta real: Portfolio (mayúscula) / porfolio (una sola 'o') / app
+        working-directory: ./Portfolio/porfolio/app
 
     steps:
       - name: Checkout
@@ -36,7 +36,7 @@ jobs:
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
           else
-            echo "No se encontró package.json en ./portfolio/app"
+            echo "No se encontró package.json en la ruta especificada"
             exit 1
           fi
 
@@ -45,12 +45,11 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-          cache-dependency-path: ./portfolio/app/package-lock.json
+          # Ruta al lockfile para la caché
+          cache-dependency-path: ./Portfolio/porfolio/app/package-lock.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          static_site_generator: nuxt
 
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
@@ -61,8 +60,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Ruta completa relativa a la raíz del REPOSITORIO
-          path: ./portfolio/app/.output/public
+          # Ruta donde Nuxt 3 suelta los archivos estáticos
+          path: ./Portfolio/porfolio/app/.output/public
 
   deploy:
     environment:
