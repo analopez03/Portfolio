@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   css: ["~/assets/css/reset.css"],
 
   app: {
-    baseURL: "/portfolio/portfolio/",
+    baseURL: "/portfolio/",
     buildAssetsDir: "assets",
   },
   ssr: false,
