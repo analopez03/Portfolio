@@ -3,11 +3,19 @@ import projectsData from "~/data/project.json";
 import type { Project } from "~/data/interfaceProjects";
 
 const projects = projectsData as Project[];
-11
 const sortProjects = projects.slice(0, 3);
 </script>
 
 <template>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
   <section
     class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center"
   >
