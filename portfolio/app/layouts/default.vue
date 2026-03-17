@@ -5,7 +5,7 @@
     <header class="bg-pink-50 px-5 grid grid-cols-9 items-stretch h-20">
       <div class="col-span-4 flex justify-center items-center">
         <nuxt-link to="/">
-          <img src="../../img/postgre.svg" alt="Logo" class="h-12 w-auto" />
+          <img src="../img/postgre.svg" alt="Logo" class="h-12 w-auto" />
         </nuxt-link>
         <h1 class="ml-2">Ana López De Ahumada</h1>
       </div>
