@@ -38,7 +38,11 @@ defineProps<{
       </div>
 
       <div class="flex items-center gap-4 mt-auto">
-        <NuxtLink :to="`/project/${project.id}`">Ver proyecto</NuxtLink>
+        <NuxtLink
+          :to="`/project/${project.id}`"
+          class="text-pink-500 font-bold hover:underline text-sm flex"
+          >Ver proyecto →</NuxtLink
+        >
 
         <a
           v-if="project.link"

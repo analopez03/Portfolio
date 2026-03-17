@@ -15,7 +15,7 @@
           to="#about"
           class="flex items-center px-6 hover:bg-pink-100 transition-colors"
         >
-          Sobre mi
+          Sobre mí
         </nuxt-link>
         <nuxt-link
           to="#contact"
