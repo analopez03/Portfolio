@@ -26,7 +26,7 @@ const socialNetworks = [
       :href="item.url"
       target="_blank"
     >
-      <img
+      <NuxtImg
         :src="item.src"
         :alt="item.name"
         class="w-6 h-6"

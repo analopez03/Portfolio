@@ -13,7 +13,7 @@ defineProps<{
     <div
       class="card-image-container -mx-9 -mt-9 mb-6 overflow-hidden h-56 shrink-0"
     >
-      <img
+      <NuxtImg
         :src="project.src"
         alt="Imagen del proyecto"
         class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"

@@ -18,7 +18,7 @@ const project = computed(() => {
     </NuxtLink>
 
     <div class="max-w-4xl mx-auto">
-      <img
+      <NuxtImg
         :src="project.src"
         class="w-full h-auto rounded-2xl shadow-2xl mb-10"
       />

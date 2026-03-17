@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const cards = [
-  { title: "BRANDING", src: "../img/almuerzo-cohete.svg" },
-  { title: "INNOVATION", src: "../img/destellos.svg" },
-  { title: "WEB DEVELOPER", src: "../img/codigo-sencillo.svg" },
-  { title: "UI/UX DESIGN", src: "../img/paleta.svg" },
+  { title: "BRANDING", src: "/img/almuerzo-cohete.svg" },
+  { title: "INNOVATION", src: "/img/destellos.svg" },
+  { title: "WEB DEVELOPER", src: "/img/codigo-sencillo.svg" },
+  { title: "UI/UX DESIGN", src: "/img/paleta.svg" },
 ];
 </script>
 
@@ -15,7 +15,11 @@ const cards = [
       class="bg-gray-100 p-5 rounded-xl hover:shadow-md transition"
     >
       <div class="text-pink-400 text-xl mb-2">
-        <img :src="card.src" :alt="card.title" class="w-5 h-5 object-contain" />
+        <NuxtImg
+          :src="card.src"
+          :alt="card.title"
+          class="w-5 h-5 object-contain"
+        />
       </div>
 
       <h3 class="text-sm font-semibold tracking-wide text-gray-700">
