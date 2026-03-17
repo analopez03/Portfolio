@@ -19,49 +19,33 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        # Eliminamos el primer 'Portfolio' porque GitHub ya está dentro de él
-        working-directory: ./porfolio/app 
+        # IMPORTANTE: Ruta exacta a la carpeta donde está tu package.json
+        working-directory: portfolio/app
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Detect package manager
-        id: detect-package-manager
-        run: |
-          if [ -f "yarn.lock" ]; then
-            echo "manager=yarn" >> $GITHUB_OUTPUT
-            echo "command=install" >> $GITHUB_OUTPUT
-          elif [ -f "package.json" ]; then
-            echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT
-          else
-            echo "No se encontró package.json"
-            exit 1
-          fi
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
-          # Ruta corregida para la caché
-          cache-dependency-path: ./porfolio/app/package-lock.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        # Al estar en working-directory, esto buscará el package.json correcto
+        run: npm install
 
       - name: Static HTML export with Nuxt
-        run: ${{ steps.detect-package-manager.outputs.manager }} run generate
+        run: npm run generate
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Ruta corregida para el artifact
-          path: ./porfolio/app/.output/public
+          # Ruta desde la raíz del repositorio hasta la carpeta de salida de Nuxt 3
+          path: portfolio/app/.output/public
 
   deploy:
     environment:
