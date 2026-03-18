@@ -66,6 +66,7 @@ const skills = [
 
           <div
             class="w-full h-2 bg-gray-300 rounded-full"
+            role="progressbar"
             aria-label="porcentaje"
           >
             <div
