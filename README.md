@@ -1,21 +1,75 @@
-# Hola, soy Ana López
+# Nuxt Minimal Starter
 
-### [Front-end Developer / Designer]
-Me apasiona transformar ideas complejas en productos digitales simples y funcionales. Mi enfoque principal es el **desarrollo de aplicaciones web** y la optimización de experiencias de usuario.
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
----
+## Setup
 
-## Tecnologías & Herramientas
+Make sure to install dependencies:
 
-| Área | Tecnologías |
-| :--- | :--- |
-| **Frontend** | React, Nuxt, Tailwind CSS, TypeScript |
-| **Backend** | Python, MySQL |
+```bash
+# npm
+npm install
 
----
+# pnpm
+pnpm install
 
-## Contacto
+# yarn
+yarn install
 
-- **LinkedIn:** [/in/tu-usuario](https://linkedin.com/in/tu-usuario)
-- **Email:** [tu-correo@email.com]
-- **Web Personal:** [www.tuweb.com](https://www.tuweb.com)
+# bun
+bun install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
