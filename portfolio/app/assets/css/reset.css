@@ -1,0 +1,57 @@
+/* Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset básico */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+  color: #111827;
+}
+
+/* Mejor renderizado de texto */
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Reset de imágenes */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Reset de inputs */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Listas */
+ul,
+ol {
+  list-style: none;
+}
