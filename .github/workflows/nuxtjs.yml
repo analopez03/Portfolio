@@ -51,9 +51,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Si el debug dice que la carpeta es 'dist', cambiaremos esto luego.
-          # Por ahora mantenemos la ruta estándar de Nuxt 3/4:
-          path: portfolio/app/.output/public
+          path: portfolio/app/dist
 
   deploy:
     environment:
