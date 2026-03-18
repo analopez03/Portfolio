@@ -10,14 +10,17 @@ export default defineNuxtConfig({
   ],
 
   css: ["~/assets/css/reset.css"],
-
+  
   app: {
-    baseURL: '/Portfolio/', 
-  },
-  ssr: false, 
-  nitro: {
-    output: {
-      publicDir: 'dist'
+      baseURL: '/Portfolio/',
+    },
+    ssr: true,        // ← cambia a true
+    nitro: {
+      prerender: {
+        crawlLinks: true   // ← genera todas las rutas automáticamente
+      },
+      output: {
+        publicDir: 'dist'
+      }
     }
-  }
 });
