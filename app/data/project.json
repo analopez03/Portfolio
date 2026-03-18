@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Cartel Ucrania",
-    "description": "Cartel diseñado desde el inicio",
+    "description": "Cartel diseñado desde cero para concientizar sobre la guerra en Ucrania, utilizando ilustrator. Es un diseño creado por capas para facilitar el diseño y la edición sobretodo a la hora de colorear.",
     "src": "/img/cartel.webp",
     "technology": ["Illustrator"],
     "link": ""
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "Postal Navidad",
-    "description": "Postal para navidad diseñado con illustrator",
+    "description": "Postal para navidad diseñada con illustrator",
     "src": "/img/navidad.webp",
     "technology": ["Illustrator"],
     "link": ""
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "name": "Prototipo de troquelado",
-    "description": "troquelado de un envase de chocolate",
+    "description": "Troquelado de un envase de chocolate",
     "src": "/img/troqueladoBanana.webp",
     "technology": ["Illustrator"],
     "link": ""
