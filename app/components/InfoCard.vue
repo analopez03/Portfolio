@@ -8,7 +8,7 @@ const cards = [
 </script>
 
 <template>
-  <div class="grid grid-cols-2 gap-4 max-w-md">
+  <div class="grid grid-cols-2 gap-4 max-w-md" aria-label="card">
     <div
       v-for="card in cards"
       :key="card.title"
@@ -22,7 +22,10 @@ const cards = [
         />
       </div>
 
-      <h3 class="text-sm font-semibold tracking-wide text-gray-700">
+      <h3
+        class="text-sm font-semibold tracking-wide text-gray-700"
+        aria-label="Card title"
+      >
         {{ card.title }}
       </h3>
     </div>

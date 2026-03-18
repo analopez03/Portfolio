@@ -52,7 +52,7 @@ const skills = [
         <div v-for="skill in category.items" :key="skill.name" class="mb-6">
           <div class="flex justify-between text-sm mb-2">
             <span class="text-gray-600">{{ skill.name }}</span>
-            <span class="text-pink-500 font-semibold">{{ skill.level }}%</span>
+            <span class="text-gray-950 font-semibold">{{ skill.level }}%</span>
           </div>
 
           <div class="w-full h-2 bg-gray-300 rounded-full">
