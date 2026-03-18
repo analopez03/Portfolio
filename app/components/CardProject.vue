@@ -33,9 +33,14 @@ const NuxtLink = resolveComponent("NuxtLink");
       </div>
 
       <div class="card-content flex flex-col flex-grow">
-        <h3 class="card-title text-2xl font-bold mb-3">{{ project.name }}</h3>
+        <h3 class="card-title text-2xl font-bold mb-3" aria-label="title">
+          {{ project.name }}
+        </h3>
 
-        <p class="card-description text-base text-gray-600 mb-6 flex-grow">
+        <p
+          class="card-description text-base text-gray-600 mb-6 flex-grow"
+          aria-label="descripcion"
+        >
           {{ project.description }}
         </p>
 
@@ -44,12 +49,13 @@ const NuxtLink = resolveComponent("NuxtLink");
             v-for="tech in project.technology"
             :key="tech"
             class="text-xs px-3 py-1 bg-pink-100 text-pink-600 rounded-full font-semibold uppercase"
+            aria-label="tecnologia"
           >
             {{ tech }}
           </span>
         </div>
 
-        <div class="flex items-center gap-4 mt-auto">
+        <div class="flex items-center gap-4 mt-auto" aria-label="verProyecto">
           <span class="text-pink-500 font-bold text-sm">
             {{ project.link ? "Web externa ↗" : "Ver proyecto →" }}
           </span>

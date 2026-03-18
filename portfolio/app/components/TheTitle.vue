@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="text-left mb-16" aria-label="titulo">
+  <div class="text-left mb-16">
     <h2 class="text-4xl font-bold">
       <slot />
       <span class="text-pink-500">
