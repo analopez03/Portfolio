@@ -48,6 +48,18 @@ jobs:
           if [ -d ".output" ]; then echo "Encontrada .output"; ls -R .output/public; fi
           if [ -d "dist" ]; then echo "Encontrada dist"; ls -R dist; fi
 
+      - name: Static HTML export with Nuxt
+        run: npm run generate
+
+      - name: List output files (Debug)
+        run: |
+          echo "=== Contenido raíz de app ==="
+          ls -la
+          echo "=== Buscando TODAS las carpetas ==="
+          find . -type d -maxdepth 3
+          echo "=== package.json scripts ==="
+          cat package.json | grep -A 10 '"scripts"'
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
