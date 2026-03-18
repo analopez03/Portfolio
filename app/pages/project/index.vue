@@ -10,6 +10,9 @@ definePageMeta({
 </script>
 
 <template>
+  <head>
+    <title>Trabajos</title>
+  </head>
   <div
     class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto p-3"
     role="list"

@@ -7,6 +7,9 @@ const sortProjects = projects.slice(0, 3);
 </script>
 
 <template>
+  <head>
+    <title>Portfolio</title>
+  </head>
   <section
     class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center"
   >

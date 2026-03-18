@@ -56,8 +56,12 @@ const skills = [
           aria-label="skills"
         >
           <div class="flex justify-between text-sm mb-2">
-            <span class="text-gray-600">{{ skill.name }}</span>
-            <span class="text-gray-950 font-semibold">{{ skill.level }}%</span>
+            <span class="text-gray-600" aria-label="skill name">{{
+              skill.name
+            }}</span>
+            <span class="text-gray-950 font-semibold" aria-label="skill level"
+              >{{ skill.level }}%</span
+            >
           </div>
 
           <div
