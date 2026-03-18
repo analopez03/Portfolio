@@ -49,13 +49,21 @@ const skills = [
           {{ category.title }}
         </h3>
 
-        <div v-for="skill in category.items" :key="skill.name" class="mb-6">
+        <div
+          v-for="skill in category.items"
+          :key="skill.name"
+          class="mb-6"
+          aria-label="skills"
+        >
           <div class="flex justify-between text-sm mb-2">
             <span class="text-gray-600">{{ skill.name }}</span>
             <span class="text-gray-950 font-semibold">{{ skill.level }}%</span>
           </div>
 
-          <div class="w-full h-2 bg-gray-300 rounded-full">
+          <div
+            class="w-full h-2 bg-gray-300 rounded-full"
+            aria-label="porcentaje"
+          >
             <div
               class="h-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500"
               :style="{ width: skill.level + '%' }"

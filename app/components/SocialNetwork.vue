@@ -19,7 +19,7 @@ const socialNetworks = [
 </script>
 
 <template>
-  <div class="flex gap-4 justify-center mt-4">
+  <div class="flex gap-4 justify-center mt-4" aria-label="redesSociales">
     <a
       v-for="item in socialNetworks"
       :key="item.name"
