@@ -14,5 +14,10 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/Portfolio/', 
   },
-  ssr: false
+  ssr: false, 
+  nitro: {
+    output: {
+      publicDir: 'dist'
+    }
+  }
 });
