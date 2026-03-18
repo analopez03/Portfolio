@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Naipes",
     "description": "Trabajo fin de grado de Diseño Gráfico, creación de marca propia, diseño y desarrollo de la página web",
-    "src": "/img/naipe.webp",
+    "src": "/img/naipes.webp",
     "technology": ["CSS", "HTML", "JavaScript"],
     "link": "https://github.com/analopez03/naipes"
   },
