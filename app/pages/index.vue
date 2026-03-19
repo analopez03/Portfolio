@@ -15,118 +15,122 @@ const CardProject = defineAsyncComponent(
 </script>
 
 <template>
-  <Head>
-    <Title>Ana López | Diseñadora Gráfica & Desarrolladora Web</Title>
-    <Link rel="preload" as="image" href="/img/perro.avif" type="image/avif" />
-    <Meta
-      name="description"
-      content="Portfolio de Ana López, diseñadora gráfica y desarrolladora web especializada en crear experiencias digitales únicas y funcionales."
-    />
-    <Meta
-      property="og:title"
-      content="Ana López | Diseñadora Gráfica & Desarrolladora Web"
-    />
-    <Meta
-      property="og:description"
-      content="Portfolio de Ana López, diseñadora gráfica y desarrolladora web especializada en crear experiencias digitales únicas y funcionales."
-    />
-    <Meta property="og:image" content="/img/perro.avif" />
-    <Meta property="og:type" content="website" />
-    <Meta name="twitter:card" content="summary_large_image" />
-    <Meta
-      name="twitter:title"
-      content="Ana López | Diseñadora Gráfica & Desarrolladora Web"
-    />
-    <Meta
-      name="twitter:description"
-      content="Portfolio de Ana López, diseñadora gráfica y desarrolladora web especializada en crear experiencias digitales únicas y funcionales."
-    />
-  </Head>
+  <div>
+    <Head>
+      <Title>Ana López | Diseñadora Gráfica & Desarrolladora Web</Title>
+      <Link rel="preload" as="image" href="/img/perro.avif" type="image/avif" />
+      <Meta
+        name="description"
+        content="Portfolio de Ana López, diseñadora gráfica y desarrolladora web especializada en crear experiencias digitales únicas y funcionales."
+      />
+      <Meta
+        property="og:title"
+        content="Ana López | Diseñadora Gráfica & Desarrolladora Web"
+      />
+      <Meta
+        property="og:description"
+        content="Portfolio de Ana López, diseñadora gráfica y desarrolladora web especializada en crear experiencias digitales únicas y funcionales."
+      />
+      <Meta property="og:image" content="/img/perro.avif" />
+      <Meta property="og:type" content="website" />
+      <Meta name="twitter:card" content="summary_large_image" />
+      <Meta
+        name="twitter:title"
+        content="Ana López | Diseñadora Gráfica & Desarrolladora Web"
+      />
+      <Meta
+        name="twitter:description"
+        content="Portfolio de Ana López, diseñadora gráfica y desarrolladora web especializada en crear experiencias digitales únicas y funcionales."
+      />
+    </Head>
 
-  <section
-    aria-labelledby="hero-titulo"
-    class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center"
-  >
-    <div>
-      <p class="text-sm tracking-widest text-pink-500 font-semibold mb-4">
-        DESIGNER & DEVELOPER
-      </p>
+    <section
+      aria-labelledby="hero-titulo"
+      class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center"
+    >
+      <div>
+        <p class="text-sm tracking-widest text-pink-500 font-semibold mb-4">
+          DESIGNER & DEVELOPER
+        </p>
 
-      <h1 id="hero-titulo" class="text-5xl font-bold leading-tight mb-6">
-        Crafting Digital Experiences:
-        <br />
-        Where <span class="text-pink-400">Design</span> Meets
-        <span class="text-pink-400">Code</span>
-      </h1>
+        <h1 id="hero-titulo" class="text-5xl font-bold leading-tight mb-6">
+          Crafting Digital Experiences:
+          <br >
+          Where <span class="text-pink-400">Design</span> Meets
+          <span class="text-pink-400">Code</span>
+        </h1>
 
-      <p class="text-gray-500 mb-8 max-w-lg">
-        Soy una diseñadora gráfica y desarrolladora web apasionada por crear
-        experiencias digitales únicas y funcionales.
-      </p>
+        <p class="text-gray-500 mb-8 max-w-lg">
+          Soy una diseñadora gráfica y desarrolladora web apasionada por crear
+          experiencias digitales únicas y funcionales.
+        </p>
 
-      <InfoCard />
-    </div>
+        <InfoCard />
+      </div>
 
-    <div class="relative flex justify-center">
-      <div class="relative w-full max-w-md">
+      <div class="relative flex justify-center">
+        <div class="relative w-full max-w-md">
+          <div
+            class="absolute inset-0 bg-pink-200 rounded-2xl translate-x-4 -translate-y-4"
+            aria-hidden="true"
+          />
+          <img
+            src="/img/perro.avif"
+            alt=""
+            class="relative rounded-2xl border-4 border-pink-400 w-full h-auto"
+            fetchpriority="high"
+          >
+        </div>
+      </div>
+    </section>
+
+    <Suspense>
+      <About />
+      <template #fallback>
         <div
-          class="absolute inset-0 bg-pink-200 rounded-2xl translate-x-4 -translate-y-4"
-          aria-hidden="true">
-        </div>
-        <img
-          src="/img/perro.avif"
-          alt=""
-          class="relative rounded-2xl border-4 border-pink-400 w-full h-auto"
-          fetchpriority="high"
+          class="h-64 animate-pulse bg-pink-50 rounded-xl"
+          aria-hidden="true"
         />
-      </div>
-    </div>
-  </section>
+      </template>
+    </Suspense>
 
-  <Suspense>
-    <About />
-    <template #fallback>
-      <div
-        class="h-64 animate-pulse bg-pink-50 rounded-xl"
-        aria-hidden="true"
-      />
-    </template>
-  </Suspense>
+    <Suspense>
+      <SkillsSection />
+      <template #fallback>
+        <div
+          class="h-64 animate-pulse bg-pink-50 rounded-xl"
+          aria-hidden="true"
+        />
+      </template>
+    </Suspense>
 
-  <Suspense>
-    <SkillsSection />
-    <template #fallback>
-      <div
-        class="h-64 animate-pulse bg-pink-50 rounded-xl"
-        aria-hidden="true"
-      />
-    </template>
-  </Suspense>
+    <section
+      aria-labelledby="proyectos-titulo"
+      class="px-6 py-16 bg-purple-50 w-full"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-center mb-8">
+          <TheTitle id="proyectos-titulo">
+            Proyectos
+            <template #pinkTitle>destacados</template>
+          </TheTitle>
 
-  <section
-    aria-labelledby="proyectos-titulo"
-    class="px-6 py-16 bg-pink-50 w-full">
-    <div class="max-w-7xl mx-auto">
-      <div class="flex justify-between items-center mb-8">
-        <TheTitle id="proyectos-titulo">
-          Proyectos
-          <template #pinkTitle>destacados</template>
-        </TheTitle>
+          <NuxtLink
+            to="/project"
+            class="text-pink-500 font-medium hover:text-pink-600 transition-colors rounded"
+            aria-label="Ver todos los proyectos del portfolio"
+          >
+            Ver todos los proyectos
+            <span class="text-2xl leading-none" aria-hidden="true">→</span>
+          </NuxtLink>
+        </div>
 
-        <NuxtLink
-          to="/project"
-          class="text-pink-500 font-medium hover:text-pink-600 transition-colors focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 rounded"
-          aria-label="Ver todos los proyectos del portfolio"
-        >
-          Ver todos los proyectos →
-        </NuxtLink>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-        <div v-for="p in sortProjects" :key="p.id" class="h-full">
-          <CardProject :project="p" />
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+          <div v-for="(p, id) in sortProjects" :key="p.id" class="h-full">
+            <CardProject :project="p" :priority="id === 0" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>

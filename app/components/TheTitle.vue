@@ -10,6 +10,6 @@
     </h2>
     <div
       class="w-16 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mt-3 rounded"
-    ></div>
+    />
   </div>
 </template>

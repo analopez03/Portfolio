@@ -1,0 +1,3 @@
+#!/bin/sh
+npm run lint
+echo "npx --no -- commitlint --edit \$1" > .husky/commit-msg

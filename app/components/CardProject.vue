@@ -4,6 +4,7 @@ import { resolveComponent } from "vue";
 
 defineProps<{
   project: Project;
+  priority?: boolean;
 }>();
 
 const NuxtLink = resolveComponent("NuxtLink");
@@ -17,7 +18,7 @@ const NuxtLink = resolveComponent("NuxtLink");
         ? { href: project.link, target: '_blank', rel: 'noopener noreferrer' }
         : { to: `/project/${project.id}` }
     "
-    class="block h-full flex flex-col cursor-pointer focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 rounded-xl"
+    class="block h-full flex flex-col cursor-pointer rounded-xl"
     :aria-label="
       project.link
         ? `Ver proyecto ${project.name} en web externa (abre en nueva pestaña)`
@@ -35,10 +36,11 @@ const NuxtLink = resolveComponent("NuxtLink");
           :src="project.src"
           :alt="`Imagen del proyecto ${project.name}`"
           class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-          loading="lazy"
+          :fetchpriority="priority ? 'high' : 'auto'"
+          :loading="priority ? 'eager' : 'lazy'"
           width="400"
           height="224"
-        />
+        >
       </div>
 
       <div class="card-content flex flex-col flex-grow">
@@ -57,7 +59,7 @@ const NuxtLink = resolveComponent("NuxtLink");
           <li
             v-for="tech in project.technology"
             :key="tech"
-            class="text-xs px-3 py-1 bg-pink-100 text-pink-600 rounded-full font-semibold uppercase"
+            class="text-xs px-3 py-1 bg-pink-200 rounded-full font-semibold uppercase"
           >
             {{ tech }}
           </li>

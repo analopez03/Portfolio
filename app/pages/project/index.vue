@@ -27,10 +27,21 @@ definePageMeta({
 
     <a
       href="#proyectos"
-      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-pink-500 text-white px-4 py-2 rounded z-50"
+      class="sr-only bg-pink-500 text-white px-4 py-2 rounded z-50"
     >
       Saltar al contenido
     </a>
+
+    <nav aria-label="Navegación principal" class="mx-8 my-4">
+      <NuxtLink
+        to="/"
+        class="text-pink-500 font-bold mb-6 inline-block"
+        aria-label="Volver al inicio"
+      >
+        <span class="text-2xl leading-none" aria-hidden="true"> ← </span>
+        Volver al inicio
+      </NuxtLink>
+    </nav>
 
     <section
       id="proyectos"
@@ -45,8 +56,8 @@ definePageMeta({
         class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 list-none p-0"
         aria-label="Lista de proyectos"
       >
-        <li v-for="p in projects" :key="p.id">
-          <CardProject :project="p" />
+        <li v-for="(p, id) in projects" :key="p.id">
+          <CardProject :project="p" :priority="id === 0" />
         </li>
       </ul>
     </section>
