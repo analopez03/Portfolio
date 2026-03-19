@@ -66,7 +66,7 @@ const NuxtLink = resolveComponent("NuxtLink");
         </ul>
 
         <div class="flex items-center gap-4 mt-auto" aria-hidden="true">
-          <span class="text-pink-500 font-bold text-sm">
+          <span class="text-pink700 font-bold text-sm">
             {{ project.link ? "Web externa ↗" : "Ver proyecto →" }}
           </span>
         </div>

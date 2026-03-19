@@ -15,19 +15,11 @@ const headingId = useId ? useId() : "project-heading";
 <template>
   <div v-if="project">
     <Head>
-      <Title>{{ project.name }} | Mi Portfolio</Title>
+      <Title>{{ project.name }} | Ana López</Title>
       <Meta name="description" :content="project.description" />
-      <Meta property="og:title" :content="project.name" />
-      <Meta property="og:description" :content="project.description" />
-      <Meta property="og:image" :content="project.src" />
-      <Meta property="og:type" content="website" />
-      <Meta name="twitter:card" content="summary_large_image" />
-      <Meta name="twitter:title" :content="project.name" />
-      <Meta name="twitter:description" :content="project.description" />
-      <Meta name="twitter:image" :content="project.src" />
     </Head>
 
-    <main id="main-content" class="min-h-screen bg-white p-10">
+    <div id="main-content" class="min-h-screen bg-white p-10">
       <a
         href="#main-content"
         class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-pink-500 text-white px-4 py-2 rounded z-50"
@@ -55,7 +47,7 @@ const headingId = useId ? useId() : "project-heading";
           fetchpriority="high"
           width="896"
           height="504"
-        >
+        />
 
         <h1 :id="headingId" class="text-5xl font-bold mb-4">
           {{ project.name }}
@@ -85,7 +77,7 @@ const headingId = useId ? useId() : "project-heading";
           <p>{{ project.description }}</p>
         </blockquote>
       </article>
-    </main>
+    </div>
   </div>
 
   <div

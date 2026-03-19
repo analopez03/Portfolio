@@ -38,7 +38,7 @@
 
       <p class="mt-4 text-gray-600 leading-relaxed">
         Puedes ver algunos de mis proyectos en la sección de
-        <a href="/project" class="text-pink-500 underline">proyectos</a>, donde
+        <a href="/project" class="text-pink-700 underline">proyectos</a>, donde
         aplico principios de <strong>branding</strong>, <strong>UX/UI</strong> y
         <strong>identidad visual</strong> para crear soluciones creativas y
         efectivas.

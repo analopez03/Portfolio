@@ -16,48 +16,20 @@ const CardProject = defineAsyncComponent(
 
 <template>
   <div>
-    <Head>
-      <Title>Ana López | Diseñadora Gráfica & Desarrolladora Web</Title>
-      <Link rel="preload" as="image" href="/img/perro.avif" type="image/avif" />
-      <Meta
-        name="description"
-        content="Portfolio de Ana López, diseñadora gráfica y desarrolladora web especializada en crear experiencias digitales únicas y funcionales."
-      />
-      <Meta
-        property="og:title"
-        content="Ana López | Diseñadora Gráfica & Desarrolladora Web"
-      />
-      <Meta
-        property="og:description"
-        content="Portfolio de Ana López, diseñadora gráfica y desarrolladora web especializada en crear experiencias digitales únicas y funcionales."
-      />
-      <Meta property="og:image" content="/img/perro.avif" />
-      <Meta property="og:type" content="website" />
-      <Meta name="twitter:card" content="summary_large_image" />
-      <Meta
-        name="twitter:title"
-        content="Ana López | Diseñadora Gráfica & Desarrolladora Web"
-      />
-      <Meta
-        name="twitter:description"
-        content="Portfolio de Ana López, diseñadora gráfica y desarrolladora web especializada en crear experiencias digitales únicas y funcionales."
-      />
-    </Head>
-
     <section
       aria-labelledby="hero-titulo"
       class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center"
     >
       <div>
-        <p class="text-sm tracking-widest text-pink-500 font-semibold mb-4">
+        <p class="text-sm tracking-widest text-pink-700 font-semibold mb-4">
           DESIGNER & DEVELOPER
         </p>
 
         <h1 id="hero-titulo" class="text-5xl font-bold leading-tight mb-6">
           Crafting Digital Experiences:
-          <br >
-          Where <span class="text-pink-400">Design</span> Meets
-          <span class="text-pink-400">Code</span>
+          <br />
+          Where <span class="text-pink-600">Design</span> Meets
+          <span class="text-pink-600">Code</span>
         </h1>
 
         <p class="text-gray-500 mb-8 max-w-lg">
@@ -79,7 +51,7 @@ const CardProject = defineAsyncComponent(
             alt=""
             class="relative rounded-2xl border-4 border-pink-400 w-full h-auto"
             fetchpriority="high"
-          >
+          />
         </div>
       </div>
     </section>
@@ -117,7 +89,7 @@ const CardProject = defineAsyncComponent(
 
           <NuxtLink
             to="/project"
-            class="text-pink-500 font-medium hover:text-pink-600 transition-colors rounded"
+            class="text-pink-700 font-medium hover:text-pink-600 transition-colors rounded"
             aria-label="Ver todos los proyectos del portfolio"
           >
             Ver todos los proyectos

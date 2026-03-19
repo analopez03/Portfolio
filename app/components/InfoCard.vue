@@ -22,12 +22,12 @@ const cards = [
         />
       </div>
 
-      <h3
+      <h2
         class="text-sm font-semibold tracking-wide text-gray-700"
         aria-label="Card title"
       >
         {{ card.title }}
-      </h3>
+      </h2>
     </div>
   </div>
 </template>
