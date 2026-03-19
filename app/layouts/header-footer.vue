@@ -4,9 +4,9 @@ const menuOpen = ref(false);
 
 <template>
   <div class="min-h-screen flex flex-col">
-    <header class="bg-pink-50 px-5 h-20 flex items-center justify-between">
+    <header class="bg-purple-50 px-5 h-20 flex items-center justify-between">
       <nuxt-link to="/" class="flex items-center gap-2 shrink-0">
-        <img src="/img/postgre.svg" alt="Logo Ana López" class="h-12 w-auto" />
+        <img src="/img/postgre.svg" alt="Logo Ana López" class="h-12 w-auto" >
         <span class="font-semibold text-sm md:text-base hidden sm:block">
           Ana López De Ahumada
         </span>
@@ -78,7 +78,11 @@ const menuOpen = ref(false);
       <slot />
     </main>
 
-    <footer class="bg-pink-50 text-center py-4" id="contact" role="contentinfo">
+    <footer
+      id="contact"
+      class="bg-purple-50 text-center py-4"
+      role="contentinfo"
+    >
       <p>&copy; 2026 Portafolio. Todos los derechos reservados.</p>
       <SocialNetwork />
     </footer>

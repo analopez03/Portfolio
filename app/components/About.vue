@@ -3,7 +3,7 @@
 <template>
   <section
     id="about"
-    class="w-full px-6 py-12 bg-pink-50"
+    class="w-full px-6 py-12 bg-purple-50"
     role="region"
     aria-label="Sobre mí - Diseñadora Gráfica"
   >
@@ -43,6 +43,18 @@
         <strong>identidad visual</strong> para crear soluciones creativas y
         efectivas.
       </p>
+    </div>
+
+    <div class="flex justify-center mt-8">
+      <a
+        href=""
+        download
+        target="target_blank"
+        class="bg-pink-200 rounded-3xl px-8 py-3 font-semibold hover:bg-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 transition-colors duration-300"
+        aria-label="Descargar el CV de Ana López en PDF"
+      >
+        Ver CV
+      </a>
     </div>
   </section>
 </template>

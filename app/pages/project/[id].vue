@@ -3,7 +3,6 @@ import projectsData from "~/data/project.json";
 import type { Project } from "~/data/interfaceProjects";
 
 const route = useRoute();
-const id = Number(route.params.id);
 
 const project = computed(() => {
   const id = Number(route.params.id);
@@ -28,7 +27,7 @@ const headingId = useId ? useId() : "project-heading";
       <Meta name="twitter:image" :content="project.src" />
     </Head>
 
-    <main class="min-h-screen bg-white p-10" id="main-content">
+    <main id="main-content" class="min-h-screen bg-white p-10">
       <a
         href="#main-content"
         class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-pink-500 text-white px-4 py-2 rounded z-50"
@@ -42,7 +41,8 @@ const headingId = useId ? useId() : "project-heading";
           class="text-pink-500 font-bold mb-6 inline-block focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 rounded"
           aria-label="Volver a la galería de proyectos"
         >
-          ← Volver a la galería
+          <span class="text-2xl leading-none" aria-hidden="true"> ← </span
+          >Volver a la galería
         </NuxtLink>
       </nav>
 
@@ -55,7 +55,7 @@ const headingId = useId ? useId() : "project-heading";
           fetchpriority="high"
           width="896"
           height="504"
-        />
+        >
 
         <h1 :id="headingId" class="text-5xl font-bold mb-4">
           {{ project.name }}

@@ -43,7 +43,7 @@ const skills = [
       <div
         v-for="category in skills"
         :key="category.title"
-        class="bg-gray-100 p-8 rounded-2xl shadow-sm"
+        class="bg-gray-100 p-8 rounded-2xl shadow-lg"
       >
         <h3 class="text-xl font-semibold mb-6">
           {{ category.title }}
@@ -72,7 +72,7 @@ const skills = [
             <div
               class="h-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500"
               :style="{ width: skill.level + '%' }"
-            ></div>
+            />
           </div>
         </div>
       </div>
