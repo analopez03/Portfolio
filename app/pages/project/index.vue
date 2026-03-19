@@ -7,24 +7,21 @@ const projects = projectsData as Project[];
 definePageMeta({
   layout: "header-footer",
 });
+
+const CardProject = defineAsyncComponent(
+  () => import("~/components/CardProject.vue"),
+);
 </script>
 
 <template>
+  <Head>
+    <Title>Proyectos | Ana López</Title>
+    <Meta
+      name="description"
+      content="Galería de proyectos de diseño y desarrollo web."
+    />
+  </Head>
   <main class="min-h-screen bg-white">
-    <Head>
-      <Title>Proyectos | Mi Portfolio</Title>
-      <Meta
-        name="description"
-        content="Galería de proyectos de diseño y desarrollo web: aplicaciones, identidad de marca, ilustración y más."
-      />
-      <Meta property="og:title" content="Proyectos | Mi Portfolio" />
-      <Meta
-        property="og:description"
-        content="Galería de proyectos de diseño y desarrollo web."
-      />
-      <Meta property="og:type" content="website" />
-    </Head>
-
     <a
       href="#proyectos"
       class="sr-only bg-pink-500 text-white px-4 py-2 rounded z-50"

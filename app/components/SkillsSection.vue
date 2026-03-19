@@ -45,9 +45,9 @@ const skills = [
         :key="category.title"
         class="bg-gray-100 p-8 rounded-2xl shadow-lg"
       >
-        <h3 class="text-xl font-semibold mb-6">
+        <h2 class="text-xl font-semibold mb-6">
           {{ category.title }}
-        </h3>
+        </h2>
 
         <div
           v-for="skill in category.items"
