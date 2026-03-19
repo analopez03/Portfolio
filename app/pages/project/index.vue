@@ -10,11 +10,45 @@ definePageMeta({
 </script>
 
 <template>
-  <div
-    class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto p-3"
-    role="list"
-    aria-label="Lista de proyectos"
-  >
-    <CardProject v-for="p in projects" :key="p.id" :project="p" />
-  </div>
+  <main class="min-h-screen bg-white">
+    <Head>
+      <Title>Proyectos | Mi Portfolio</Title>
+      <Meta
+        name="description"
+        content="Galería de proyectos de diseño y desarrollo web: aplicaciones, identidad de marca, ilustración y más."
+      />
+      <Meta property="og:title" content="Proyectos | Mi Portfolio" />
+      <Meta
+        property="og:description"
+        content="Galería de proyectos de diseño y desarrollo web."
+      />
+      <Meta property="og:type" content="website" />
+    </Head>
+
+    <a
+      href="#proyectos"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-pink-500 text-white px-4 py-2 rounded z-50"
+    >
+      Saltar al contenido
+    </a>
+
+    <section
+      id="proyectos"
+      aria-labelledby="proyectos-titulo"
+      class="max-w-6xl mx-auto p-3"
+    >
+      <h1 id="proyectos-titulo" class="text-4xl font-bold mb-8 text-center">
+        Proyectos
+      </h1>
+
+      <ul
+        class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 list-none p-0"
+        aria-label="Lista de proyectos"
+      >
+        <li v-for="p in projects" :key="p.id">
+          <CardProject :project="p" />
+        </li>
+      </ul>
+    </section>
+  </main>
 </template>

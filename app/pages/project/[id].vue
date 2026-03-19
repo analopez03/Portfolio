@@ -9,37 +9,96 @@ const project = computed(() => {
   const id = Number(route.params.id);
   return (projectsData as Project[]).find((p) => p.id === id);
 });
+
+const headingId = useId ? useId() : "project-heading";
 </script>
 
 <template>
-  <div v-if="project" class="min-h-screen bg-white p-10">
-    <NuxtLink to="/project" class="text-pink-500 font-bold mb-6 inline-block">
-      ← Volver a la galería
-    </NuxtLink>
+  <div v-if="project">
+    <Head>
+      <Title>{{ project.name }} | Mi Portfolio</Title>
+      <Meta name="description" :content="project.description" />
+      <Meta property="og:title" :content="project.name" />
+      <Meta property="og:description" :content="project.description" />
+      <Meta property="og:image" :content="project.src" />
+      <Meta property="og:type" content="website" />
+      <Meta name="twitter:card" content="summary_large_image" />
+      <Meta name="twitter:title" :content="project.name" />
+      <Meta name="twitter:description" :content="project.description" />
+      <Meta name="twitter:image" :content="project.src" />
+    </Head>
 
-    <div class="max-w-4xl mx-auto">
-      <NuxtImg
-        :src="project.src"
-        class="w-full h-auto rounded-2xl shadow-2xl mb-10"
-      />
-
-      <h1 class="text-5xl font-bold mb-4">{{ project.name }}</h1>
-
-      <div class="flex gap-2 mb-8">
-        <span
-          v-for="t in project.technology"
-          :key="t"
-          class="bg-pink-100 text-pink-600 px-4 py-1 rounded-full text-sm font-bold uppercase"
-        >
-          {{ t }}
-        </span>
-      </div>
-
-      <p
-        class="text-xl text-gray-700 leading-relaxed italic border-l-4 border-pink-400 pl-6"
+    <main class="min-h-screen bg-white p-10" id="main-content">
+      <a
+        href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-pink-500 text-white px-4 py-2 rounded z-50"
       >
-        {{ project.description }}
-      </p>
-    </div>
+        Saltar al contenido principal
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <NuxtLink
+          to="/project"
+          class="text-pink-500 font-bold mb-6 inline-block focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 rounded"
+          aria-label="Volver a la galería de proyectos"
+        >
+          ← Volver a la galería
+        </NuxtLink>
+      </nav>
+
+      <article class="max-w-4xl mx-auto" :aria-labelledby="headingId">
+        <img
+          :src="project.src"
+          :alt="`Captura de pantalla del proyecto ${project.name}`"
+          class="w-full h-auto rounded-2xl shadow-2xl mb-10"
+          loading="eager"
+          fetchpriority="high"
+          width="896"
+          height="504"
+        />
+
+        <h1 :id="headingId" class="text-5xl font-bold mb-4">
+          {{ project.name }}
+        </h1>
+
+        <div class="mb-8">
+          <p class="sr-only">Tecnologías utilizadas:</p>
+          <ul
+            class="flex flex-wrap gap-2 list-none p-0"
+            role="list"
+            aria-label="Tecnologías utilizadas en este proyecto"
+          >
+            <li v-for="tech in project.technology" :key="tech">
+              <span
+                class="bg-pink-100 text-pink-600 px-4 py-1 rounded-full text-sm font-bold uppercase block"
+              >
+                {{ tech }}
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <blockquote
+          class="text-xl text-gray-700 leading-relaxed italic border-l-4 border-pink-400 pl-6"
+          :cite="project.link || undefined"
+        >
+          <p>{{ project.description }}</p>
+        </blockquote>
+      </article>
+    </main>
+  </div>
+
+  <div
+    v-else
+    class="min-h-screen flex items-center justify-center"
+    role="status"
+    aria-live="polite"
+    aria-label="Cargando proyecto"
+  >
+    <span class="sr-only">Cargando proyecto...</span>
+    <div
+      class="w-8 h-8 border-4 border-pink-400 border-t-transparent rounded-full animate-spin"
+      aria-hidden="true"
+    />
   </div>
 </template>
