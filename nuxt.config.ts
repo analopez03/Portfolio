@@ -5,4 +5,21 @@ export default defineNuxtConfig({
   modules: ["@nuxt/a11y", "@nuxtjs/tailwindcss", "@pinia/nuxt", "@nuxt/image"],
 
   css: ["~/assets/css/reset.css"],
+
+  image: {
+    format: ["avif", "webp"],
+  },
+
+  ssr: true,
+
+  app: {
+    head: {
+      link: [
+        {
+          rel: "preconnect",
+          href: "https://fonts.googleapis.com",
+        },
+      ],
+    },
+  },
 });

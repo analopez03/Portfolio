@@ -4,10 +4,47 @@ import type { Project } from "~/data/interfaceProjects";
 
 const projects = projectsData as Project[];
 const sortProjects = projects.slice(0, 3);
+
+const About = defineAsyncComponent(() => import("~/components/About.vue"));
+const SkillsSection = defineAsyncComponent(
+  () => import("~/components/SkillsSection.vue"),
+);
+const CardProject = defineAsyncComponent(
+  () => import("~/components/CardProject.vue"),
+);
 </script>
 
 <template>
+  <Head>
+    <Title>Ana López | Diseñadora Gráfica & Desarrolladora Web</Title>
+    <Link rel="preload" as="image" href="/img/perro.avif" type="image/avif" />
+    <Meta
+      name="description"
+      content="Portfolio de Ana López, diseñadora gráfica y desarrolladora web especializada en crear experiencias digitales únicas y funcionales."
+    />
+    <Meta
+      property="og:title"
+      content="Ana López | Diseñadora Gráfica & Desarrolladora Web"
+    />
+    <Meta
+      property="og:description"
+      content="Portfolio de Ana López, diseñadora gráfica y desarrolladora web especializada en crear experiencias digitales únicas y funcionales."
+    />
+    <Meta property="og:image" content="/img/perro.avif" />
+    <Meta property="og:type" content="website" />
+    <Meta name="twitter:card" content="summary_large_image" />
+    <Meta
+      name="twitter:title"
+      content="Ana López | Diseñadora Gráfica & Desarrolladora Web"
+    />
+    <Meta
+      name="twitter:description"
+      content="Portfolio de Ana López, diseñadora gráfica y desarrolladora web especializada en crear experiencias digitales únicas y funcionales."
+    />
+  </Head>
+
   <section
+    aria-labelledby="hero-titulo"
     class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center"
   >
     <div>
@@ -15,7 +52,7 @@ const sortProjects = projects.slice(0, 3);
         DESIGNER & DEVELOPER
       </p>
 
-      <h1 class="text-5xl font-bold leading-tight mb-6">
+      <h1 id="hero-titulo" class="text-5xl font-bold leading-tight mb-6">
         Crafting Digital Experiences:
         <br />
         Where <span class="text-pink-400">Design</span> Meets
@@ -31,44 +68,64 @@ const sortProjects = projects.slice(0, 3);
     </div>
 
     <div class="relative flex justify-center">
-      <div
-        class="absolute inset-0 bg-pink-200 rounded-2xl translate-x-4 translate-y-4"
-      ></div>
-
-      <NuxtImg
-        src="/img/perro.webp"
-        alt="Perro"
-        class="relative rounded-2xl border-4 border-pink-400"
-      />
+      <div class="relative w-full max-w-md">
+        <div
+          class="absolute inset-0 bg-pink-200 rounded-2xl translate-x-4 -translate-y-4"
+          aria-hidden="true">
+        </div>
+        <img
+          src="/img/perro.avif"
+          alt=""
+          class="relative rounded-2xl border-4 border-pink-400 w-full h-auto"
+          fetchpriority="high"
+        />
+      </div>
     </div>
   </section>
 
-  <section>
+  <Suspense>
     <About />
-  </section>
+    <template #fallback>
+      <div
+        class="h-64 animate-pulse bg-pink-50 rounded-xl"
+        aria-hidden="true"
+      />
+    </template>
+  </Suspense>
 
-  <section>
+  <Suspense>
     <SkillsSection />
-  </section>
+    <template #fallback>
+      <div
+        class="h-64 animate-pulse bg-pink-50 rounded-xl"
+        aria-hidden="true"
+      />
+    </template>
+  </Suspense>
 
-  <section class="px-6 py-16 bg-pink-50 w-full">
+  <section
+    aria-labelledby="proyectos-titulo"
+    class="px-6 py-16 bg-pink-50 w-full">
     <div class="max-w-7xl mx-auto">
       <div class="flex justify-between items-center mb-8">
-        <TheTitle>
+        <TheTitle id="proyectos-titulo">
           Proyectos
           <template #pinkTitle>destacados</template>
         </TheTitle>
 
         <NuxtLink
           to="/project"
-          class="text-pink-500 font-medium hover:text-pink-600 transition-colors"
+          class="text-pink-500 font-medium hover:text-pink-600 transition-colors focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 rounded"
+          aria-label="Ver todos los proyectos del portfolio"
         >
           Ver todos los proyectos →
         </NuxtLink>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-        <CardProject v-for="p in sortProjects" :key="p.id" :project="p" />
+        <div v-for="p in sortProjects" :key="p.id" class="h-full">
+          <CardProject :project="p" />
+        </div>
       </div>
     </div>
   </section>
