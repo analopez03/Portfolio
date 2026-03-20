@@ -40,7 +40,7 @@ const NuxtLink = resolveComponent("NuxtLink");
           :loading="priority ? 'eager' : 'lazy'"
           width="400"
           height="224"
-        />
+        >
       </div>
 
       <div class="flex flex-col flex-grow">

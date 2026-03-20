@@ -11,7 +11,7 @@ const menuOpen = ref(false);
         to="/"
         class="flex items-center gap-2 shrink-0 text-text-primary"
       >
-        <img src="/img/postgre.svg" alt="Logo Ana López" class="h-12 w-auto" />
+        <img src="/img/postgre.svg" alt="Logo Ana López" class="h-12 w-auto" >
         <span class="text-sm md:text-base hidden sm:block">
           Ana López De Ahumada
         </span>

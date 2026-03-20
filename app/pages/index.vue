@@ -27,7 +27,7 @@ const CardProject = defineAsyncComponent(
 
         <h1 id="hero-titulo" class="text-5xl font-bold leading-tight mb-6">
           Crafting Digital Experiences:
-          <br />
+          <br >
           Where <span class="text-accent">Design</span> Meets
           <span class="text-accent">Code</span>
         </h1>
@@ -51,7 +51,7 @@ const CardProject = defineAsyncComponent(
             alt=""
             class="relative rounded-2xl border-4 border-pink-400 w-full h-auto"
             fetchpriority="high"
-          />
+          >
         </div>
       </div>
     </section>
