@@ -33,6 +33,8 @@ const skills = [
 </script>
 
 <template>
+  <div class="h-px bg-gradient-to-r from-transparent from-[20%] via-accent to-transparent to-[80%]" />
+
   <section class="py-20 px-6 max-w-7xl mx-auto">
     <TheTitle>
       Mis
@@ -43,9 +45,9 @@ const skills = [
       <div
         v-for="category in skills"
         :key="category.title"
-        class="bg-gray-100 p-8 rounded-2xl shadow-lg"
+        class="bg-gray-100 p-8 rounded-2xl hover:shadow-xl transition-shadow"
       >
-        <h2 class="text-xl font-semibold mb-6">
+        <h2 class="text-xl font-semibold mb-6 text-text-primary">
           {{ category.title }}
         </h2>
 
@@ -53,21 +55,24 @@ const skills = [
           v-for="skill in category.items"
           :key="skill.name"
           class="mb-6"
-          aria-label="skills"
+          :aria-label="`Habilidad: ${skill.name}`"
         >
           <div class="flex justify-between text-sm mb-2">
-            <span class="text-gray-600" aria-label="skill name">{{
-              skill.name
-            }}</span>
-            <span class="text-gray-950 font-semibold" aria-label="skill level"
-              >{{ skill.level }}%</span
-            >
+            <span class="text-text-secondary" aria-label="skill name">
+              {{ skill.name }}
+            </span>
+            <span class="text-text-primary font-semibold" aria-label="skill level">
+              {{ skill.level }}%
+            </span>
           </div>
 
           <div
             class="w-full h-2 bg-gray-300 rounded-full"
             role="progressbar"
-            aria-label="porcentaje"
+            :aria-valuenow="skill.level"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            :aria-label="`${skill.name}: ${skill.level}%`"
           >
             <div
               class="h-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500"
@@ -78,4 +83,6 @@ const skills = [
       </div>
     </div>
   </section>
+
+  <div class="h-px bg-gradient-to-r from-transparent from-[20%] via-accent to-transparent to-[80%]" />
 </template>
