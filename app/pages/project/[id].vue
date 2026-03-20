@@ -47,7 +47,7 @@ const headingId = useId ? useId() : "project-heading";
           fetchpriority="high"
           width="896"
           height="504"
-        />
+        >
 
         <h1 :id="headingId" class="text-5xl font-bold mb-4">
           {{ project.name }}

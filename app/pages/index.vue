@@ -21,18 +21,18 @@ const CardProject = defineAsyncComponent(
       class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center"
     >
       <div>
-        <p class="text-sm tracking-widest text-pink-700 font-semibold mb-4">
+        <p class="text-sm tracking-widest text-accent font-semibold mb-4">
           DESIGNER & DEVELOPER
         </p>
 
         <h1 id="hero-titulo" class="text-5xl font-bold leading-tight mb-6">
           Crafting Digital Experiences:
-          <br />
-          Where <span class="text-pink-600">Design</span> Meets
-          <span class="text-pink-600">Code</span>
+          <br >
+          Where <span class="text-accent">Design</span> Meets
+          <span class="text-accent">Code</span>
         </h1>
 
-        <p class="text-gray-500 mb-8 max-w-lg">
+        <p class="text-muted mb-8 max-w-lg">
           Soy una diseñadora gráfica y desarrolladora web apasionada por crear
           experiencias digitales únicas y funcionales.
         </p>
@@ -51,7 +51,7 @@ const CardProject = defineAsyncComponent(
             alt=""
             class="relative rounded-2xl border-4 border-pink-400 w-full h-auto"
             fetchpriority="high"
-          />
+          >
         </div>
       </div>
     </section>
@@ -60,7 +60,7 @@ const CardProject = defineAsyncComponent(
       <About />
       <template #fallback>
         <div
-          class="h-64 animate-pulse bg-pink-50 rounded-xl"
+          class="h-64 animate-pulse bg-surface rounded-xl"
           aria-hidden="true"
         />
       </template>
@@ -70,7 +70,7 @@ const CardProject = defineAsyncComponent(
       <SkillsSection />
       <template #fallback>
         <div
-          class="h-64 animate-pulse bg-pink-50 rounded-xl"
+          class="h-64 animate-pulse bg-surface rounded-xl"
           aria-hidden="true"
         />
       </template>
@@ -78,7 +78,7 @@ const CardProject = defineAsyncComponent(
 
     <section
       aria-labelledby="proyectos-titulo"
-      class="px-6 py-16 bg-purple-50 w-full"
+      class="px-6 py-16 bg-surface w-full"
     >
       <div class="max-w-7xl mx-auto">
         <div class="flex justify-between items-center mb-8">
@@ -89,7 +89,7 @@ const CardProject = defineAsyncComponent(
 
           <NuxtLink
             to="/project"
-            class="text-pink-700 font-medium hover:text-pink-600 transition-colors rounded"
+            class="text-accent font-medium hover:text-pink-600 transition-colors rounded"
             aria-label="Ver todos los proyectos del portfolio"
           >
             Ver todos los proyectos
