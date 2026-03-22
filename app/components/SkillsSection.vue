@@ -45,7 +45,7 @@ const skills = [
       <div
         v-for="category in skills"
         :key="category.title"
-        class="bg-gray-100 p-8 rounded-2xl hover:shadow-xl transition-shadow"
+        class="bg-surface p-8 rounded-2xl hover:shadow-xl transition-shadow"
       >
         <h2 class="text-xl font-semibold mb-6 text-text-primary">
           {{ category.title }}
@@ -67,7 +67,7 @@ const skills = [
           </div>
 
           <div
-            class="w-full h-2 bg-gray-300 rounded-full"
+            class="w-full h-2 bg-border rounded-full"
             role="progressbar"
             :aria-valuenow="skill.level"
             aria-valuemin="0"
@@ -75,7 +75,7 @@ const skills = [
             :aria-label="`${skill.name}: ${skill.level}%`"
           >
             <div
-              class="h-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500"
+              class="h-2 rounded-full bg-accent"
               :style="{ width: skill.level + '%' }"
             />
           </div>

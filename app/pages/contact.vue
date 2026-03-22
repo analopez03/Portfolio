@@ -60,6 +60,10 @@ async function submit() {
     sending.value = false;
   }
 }
+
+definePageMeta({
+  layout: "header-footer",
+});
 </script>
 
 <template>

@@ -19,10 +19,10 @@ const headingId = useId ? useId() : "project-heading";
       <Meta name="description" :content="project.description" />
     </Head>
 
-    <div id="main-content" class="min-h-screen bg-white p-10">
+    <div id="main-content" class="min-h-screen bg-bg p-10">
       <a
         href="#main-content"
-        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-pink-500 text-white px-4 py-2 rounded z-50"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-accent text-text-on-accent px-4 py-2 rounded z-50"
       >
         Saltar al contenido principal
       </a>
@@ -30,7 +30,7 @@ const headingId = useId ? useId() : "project-heading";
       <nav aria-label="Navegación principal">
         <NuxtLink
           to="/project"
-          class="text-pink-500 font-bold mb-6 inline-block focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 rounded"
+          class="text-accent font-bold mb-6 inline-block"
           aria-label="Volver a la galería de proyectos"
         >
           <span class="text-2xl leading-none" aria-hidden="true"> ← </span
@@ -62,7 +62,7 @@ const headingId = useId ? useId() : "project-heading";
           >
             <li v-for="tech in project.technology" :key="tech">
               <span
-                class="bg-pink-100 text-pink-600 px-4 py-1 rounded-full text-sm font-bold uppercase block"
+                class="bg-accent-subtle text-accent px-4 py-1 rounded-full text-sm font-bold uppercase block"
               >
                 {{ tech }}
               </span>
@@ -71,7 +71,7 @@ const headingId = useId ? useId() : "project-heading";
         </div>
 
         <blockquote
-          class="text-xl text-gray-700 leading-relaxed italic border-l-4 border-pink-400 pl-6"
+          class="text-xl text-text-secondary leading-relaxed italic border-l-4 border-accent pl-6"
           :cite="project.link || undefined"
         >
           <p>{{ project.description }}</p>
@@ -89,7 +89,7 @@ const headingId = useId ? useId() : "project-heading";
   >
     <span class="sr-only">Cargando proyecto...</span>
     <div
-      class="w-8 h-8 border-4 border-pink-400 border-t-transparent rounded-full animate-spin"
+      class="w-8 h-8 border-4 border-accent border-t-transparent rounded-full animate-spin"
       aria-hidden="true"
     />
   </div>

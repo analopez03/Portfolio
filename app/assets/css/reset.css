@@ -51,16 +51,15 @@ button {
 /* ─── Custom properties ─────────────────────────────────────────────────────── */
 
 :root {
-
   /* Colores base */
-  --color-bg:         #ffffff;       /* fondo página */
-  --color-surface:    #fdf5f8;       /* fondo cards y formularios */
-  --color-surface-2:  #fdbad5;       /* superficies con más color, hover suave */
+  --color-bg:         #ffffff;      
+  --color-surface:    #fdf5f8;       
+  --color-surface-2:  #fdbad5;       
 
   /* Acento rosa */
-  --color-accent:         #c23b6e;   /* rosa principal — botones, links, focus */
-  --color-accent-hover:   #a8305d;   /* rosa oscuro para hover */
-  --color-accent-subtle:  #f4d0de;   /* rosa muy claro para fondos de badge */
+  --color-accent:         #c23b6e;  
+  --color-accent-hover:   #a8305d;   
+  --color-accent-subtle:  #f4d0de;   
 
   /* Texto */
   --color-text-primary:   #1a1018;  
@@ -81,51 +80,35 @@ button {
 
   /* Tipografía */
   --font-sans:    'Inter', system-ui, sans-serif;
+}
 
-  --font-size-xs:   11px;
-  --font-size-sm:   13px;
-  --font-size-base: 16px;
-  --font-size-lg:   20px;
-  --font-size-xl:   28px;
-  --font-size-2xl:  40px;
-  --font-size-3xl:  64px;
+/* ─── Dark mode ─────────────────────────────────────────────────────────────── */
 
-  --font-weight-light:   300;
-  --font-weight-regular: 400;
-  --font-weight-medium:  500;
+.dark {
+  /* Colores base */
+  --color-bg:         #1a1018;      
+  --color-surface:    #2a1f25;       
+  --color-surface-2:  #3a2f35;      
 
-  --line-height-tight:  1.1;
-  --line-height-normal: 1.6;
-  --line-height-loose:  1.8;
+  /* Acento rosa */
+  --color-accent:         #c23b6e;   
+  --color-accent-hover:   #a8305d;  
+  --color-accent-subtle:  #4a3f45;  
 
-  --letter-spacing-wide:  0.12em;
-  --letter-spacing-wider: 0.18em;
+  /* Texto */
+  --color-text-primary:   #ffffff;  
+  --color-text-secondary: #afa9ac;   
+  --color-text-muted:     #6b5f65;  
+  --color-text-on-accent: #ffffff;   
 
-  /* Espaciado */
-  --space-1:  4px;
-  --space-2:  8px;
-  --space-3:  12px;
-  --space-4:  16px;
-  --space-5:  20px;
-  --space-6:  24px;
-  --space-8:  32px;
-  --space-10: 40px;
-  --space-14: 56px;
+  /* Bordes */
+  --color-border:         #3a2f35;   
+  --color-border-focus:   #c23b6e;   
+  --color-border-strong:  #5a4f55;   
 
-  /* Bordes redondeados */
-  --radius-sm: 2px;
-  --radius-md: 6px;
-  --radius-lg: 12px;
-  --radius-full: 9999px;
-
-  /* Transiciones */
-  --transition-fast:   0.15s ease;
-  --transition-normal: 0.25s ease;
-  --transition-slow:   0.35s ease;
-
-  /* Anchos de contenido */
-  --max-width-sm:   480px;
-  --max-width-md:   680px;
-  --max-width-lg:   960px;
-  --max-width-xl:  1200px;
+  /* Estados semánticos */
+  --color-error:          #b03060;  
+  --color-error-bg:       #4a1f25;  
+  --color-success:        #2d7a5a;  
+  --color-success-bg:     #1a2f25;  
 }

@@ -22,10 +22,10 @@ const CardProject = defineAsyncComponent(
         content="Galería de proyectos de diseño y desarrollo web."
       />
     </Head>
-    <main class="min-h-screen bg-white">
+    <main class="min-h-screen bg-bg">
       <a
         href="#proyectos"
-        class="sr-only bg-pink-500 text-white px-4 py-2 rounded z-50"
+        class="sr-only bg-accent text-text-on-accent px-4 py-2 rounded z-50"
       >
         Saltar al contenido
       </a>
@@ -33,7 +33,7 @@ const CardProject = defineAsyncComponent(
       <nav aria-label="Navegación principal" class="mx-8 my-4">
         <NuxtLink
           to="/"
-          class="text-pink-500 font-bold mb-6 inline-block"
+          class="text-accent font-bold mb-6 inline-block"
           aria-label="Volver al inicio"
         >
           <span class="text-2xl leading-none" aria-hidden="true"> ← </span>
@@ -46,7 +46,7 @@ const CardProject = defineAsyncComponent(
         aria-labelledby="proyectos-titulo"
         class="max-w-6xl mx-auto p-3"
       >
-        <h1 id="proyectos-titulo" class="text-4xl font-bold mb-8 text-center">
+        <h1 id="proyectos-titulo" class="text-4xl font-bold mb-8 text-center text-text-primary">
           Proyectos
         </h1>
 

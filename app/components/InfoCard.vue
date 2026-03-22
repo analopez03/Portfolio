@@ -12,9 +12,9 @@ const cards = [
     <div
       v-for="card in cards"
       :key="card.title"
-      class="bg-gray-100 p-5 rounded-xl hover:shadow-md transition"
+      class="bg-surface p-5 rounded-xl hover:shadow-md transition"
     >
-      <div class="text-pink-400 text-xl mb-2">
+      <div class="text-accent text-xl mb-2">
         <NuxtImg
           :src="card.src"
           :alt="card.title"
@@ -23,7 +23,7 @@ const cards = [
       </div>
 
       <h2
-        class="text-sm font-semibold tracking-wide text-gray-700"
+        class="text-sm font-semibold tracking-wide text-text-primary"
         aria-label="Card title"
       >
         {{ card.title }}

@@ -33,6 +33,8 @@ const menuOpen = ref(false);
         >
           Home
         </nuxt-link>
+
+        <DarkModeToggle />
       </nav>
 
       <button
@@ -77,6 +79,8 @@ const menuOpen = ref(false);
       >
         Home
       </nuxt-link>
+
+      <DarkModeToggle />
     </nav>
 
     <main class="flex-grow bg-bg">
