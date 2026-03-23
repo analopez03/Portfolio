@@ -3,10 +3,10 @@ const menuOpen = ref(false);
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col bg-surface">
+  <div class="min-h-screen flex flex-col">
     <div class="border-b border-border w-full sticky top-0 z-50 bg-surface">
       <header
-        class="px-5 h-20 max-w-7xl mx-auto w-full flex items-center justify-between"
+        class="bg-surface px-5 h-20 flex max-w-7xl mx-auto w-full items-center justify-between border-b border-border"
       >
         <nuxt-link
           to="/"
@@ -22,17 +22,12 @@ const menuOpen = ref(false);
           aria-label="Navegación principal"
         >
           <nuxt-link
-            to="#about"
+            to="/"
             class="flex items-center px-6 text-text-secondary hover:bg-surface-2 hover:text-accent transition-colors"
           >
-            Sobre mí
+            Home
           </nuxt-link>
-          <nuxt-link
-            to="/contact"
-            class="flex items-center px-6 text-text-secondary hover:bg-surface-2 hover:text-accent transition-colors"
-          >
-            Contacto
-          </nuxt-link>
+
           <nuxt-link
             to="/project"
             class="flex items-center px-6 text-text-secondary hover:bg-surface-2 hover:text-accent transition-colors"
@@ -69,22 +64,15 @@ const menuOpen = ref(false);
     <nav
       v-if="menuOpen"
       id="mobile-menu"
-      class="md:hidden bg-surface-3 flex flex-col border-t border-border items-center justify-between"
+      class="md:hidden bg-surface flex flex-col border-t border-border"
       aria-label="Menú móvil"
     >
       <nuxt-link
-        to="#about"
+        to="/"
         class="px-6 py-4 text-text-primary font-medium hover:bg-surface-2 hover:text-accent transition-colors"
         @click="menuOpen = false"
       >
-        Sobre mí
-      </nuxt-link>
-      <nuxt-link
-        to="/contact"
-        class="px-6 py-4 text-text-primary font-medium hover:bg-surface-2 hover:text-accent transition-colors"
-        @click="menuOpen = false"
-      >
-        Contacto
+        Home
       </nuxt-link>
       <nuxt-link
         to="/project"
@@ -113,10 +101,6 @@ const menuOpen = ref(false);
       >
         Contáctame
       </NuxtLink>
-      <p>
-        Agradecimientos a Mar por soportarme y a Marcos por darme la super idea
-        de usar azul
-      </p>
     </footer>
   </div>
 </template>

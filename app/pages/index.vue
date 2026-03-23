@@ -25,14 +25,17 @@ const CardProject = defineAsyncComponent(
           DESIGNER & DEVELOPER
         </p>
 
-        <h1 id="hero-titulo" class="text-5xl font-bold leading-tight mb-6">
+        <h1
+          id="hero-titulo"
+          class="text-5xl font-bold leading-tight mb-6 text-text-primary"
+        >
           Crafting Digital Experiences:
-          <br >
+          <br />
           Where <span class="text-accent">Design</span> Meets
           <span class="text-accent">Code</span>
         </h1>
 
-        <p class="text-muted mb-8 max-w-lg">
+        <p class="text-text-muted mb-8 max-w-lg">
           Soy una diseñadora gráfica y desarrolladora web apasionada por crear
           experiencias digitales únicas y funcionales.
         </p>
@@ -43,15 +46,15 @@ const CardProject = defineAsyncComponent(
       <div class="relative flex justify-center">
         <div class="relative w-full max-w-md">
           <div
-            class="absolute inset-0 bg-pink-200 rounded-2xl translate-x-4 -translate-y-4"
+            class="absolute inset-0 bg-surface-2 rounded-2xl translate-x-4 -translate-y-4"
             aria-hidden="true"
           />
           <img
             src="/img/perro.avif"
             alt=""
-            class="relative rounded-2xl border-4 border-pink-400 w-full h-auto"
+            class="relative rounded-2xl border-4 border-border-focus w-full h-auto"
             fetchpriority="high"
-          >
+          />
         </div>
       </div>
     </section>
@@ -89,7 +92,7 @@ const CardProject = defineAsyncComponent(
 
           <NuxtLink
             to="/project"
-            class="text-accent font-medium hover:text-pink-600 transition-colors rounded"
+            class="text-accent font-medium hover:text-accent-hover transition-colors rounded"
             aria-label="Ver todos los proyectos del portfolio"
           >
             Ver todos los proyectos

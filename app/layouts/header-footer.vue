@@ -4,60 +4,61 @@ const menuOpen = ref(false);
 
 <template>
   <div class="min-h-screen flex flex-col">
-    <header
-      class="bg-surface px-5 h-20 flex items-center justify-between border-b border-border"
-    >
-      <nuxt-link
-        to="/"
-        class="flex items-center gap-2 shrink-0 text-text-primary"
+    <div class="border-b border-border w-full sticky top-0 z-50 bg-surface">
+      <header
+        class="bg-surface px-5 h-20 max-w-7xl mx-auto w-full flex items-center justify-between border-b border-border"
       >
-        <img src="/img/postgre.svg" alt="Logo Ana López" class="h-12 w-auto" >
-        <span class="font-semibold text-sm md:text-base hidden sm:block">
-          Ana López De Ahumada
-        </span>
-      </nuxt-link>
-
-      <nav
-        class="hidden md:flex items-stretch h-full"
-        aria-label="Navegación principal"
-      >
-        <nuxt-link
-          to="/contact"
-          class="flex items-center px-6 text-text-secondary hover:bg-surface-2 hover:text-accent transition-colors"
-        >
-          Contacto
-        </nuxt-link>
         <nuxt-link
           to="/"
-          class="flex items-center px-6 text-text-secondary hover:bg-surface-2 hover:text-accent transition-colors"
+          class="flex items-center gap-2 shrink-0 text-text-primary"
         >
-          Home
+          <span class="text-sm md:text-base hidden sm:block">
+            Ana López De Ahumada
+          </span>
         </nuxt-link>
 
-        <DarkModeToggle />
-      </nav>
+        <nav
+          class="hidden md:flex items-stretch h-full"
+          aria-label="Navegación principal"
+        >
+          <nuxt-link
+            to="/contact"
+            class="flex items-center px-6 text-text-secondary hover:bg-surface-2 hover:text-accent transition-colors"
+          >
+            Contacto
+          </nuxt-link>
+          <nuxt-link
+            to="/"
+            class="flex items-center px-6 text-text-secondary hover:bg-surface-2 hover:text-accent transition-colors"
+          >
+            Home
+          </nuxt-link>
 
-      <button
-        class="md:hidden flex flex-col gap-1.5 p-2 rounded focus:outline-none focus:ring-2 focus:ring-border-focus"
-        :aria-expanded="menuOpen"
-        aria-controls="mobile-menu"
-        aria-label="Abrir menú de navegación"
-        @click="menuOpen = !menuOpen"
-      >
-        <span
-          class="block w-6 h-0.5 bg-accent transition-transform duration-300"
-          :class="menuOpen ? 'translate-y-2 rotate-45' : ''"
-        />
-        <span
-          class="block w-6 h-0.5 bg-accent transition-opacity duration-300"
-          :class="menuOpen ? 'opacity-0' : ''"
-        />
-        <span
-          class="block w-6 h-0.5 bg-accent transition-transform duration-300"
-          :class="menuOpen ? '-translate-y-2 -rotate-45' : ''"
-        />
-      </button>
-    </header>
+          <DarkModeToggle />
+        </nav>
+
+        <button
+          class="md:hidden flex flex-col gap-1.5 p-2 rounded focus:outline-none focus:ring-2 focus:ring-border-focus"
+          :aria-expanded="menuOpen"
+          aria-controls="mobile-menu"
+          aria-label="Abrir menú de navegación"
+          @click="menuOpen = !menuOpen"
+        >
+          <span
+            class="block w-6 h-0.5 bg-accent transition-transform duration-300"
+            :class="menuOpen ? 'translate-y-2 rotate-45' : ''"
+          />
+          <span
+            class="block w-6 h-0.5 bg-accent transition-opacity duration-300"
+            :class="menuOpen ? 'opacity-0' : ''"
+          />
+          <span
+            class="block w-6 h-0.5 bg-accent transition-transform duration-300"
+            :class="menuOpen ? '-translate-y-2 -rotate-45' : ''"
+          />
+        </button>
+      </header>
+    </div>
 
     <nav
       v-if="menuOpen"
@@ -88,11 +89,17 @@ const menuOpen = ref(false);
     </main>
 
     <footer
-      class="bg-surface border-t border-border text-center py-4 text-text-secondary"
+      class="bg-bg border-t border-border text-center py-4 text-text-secondary"
       role="contentinfo"
     >
-      <p>&copy; 2026 Portafolio. Todos los derechos reservados.</p>
       <SocialNetwork />
+      <p>&copy; 2026 Portafolio. Todos los derechos reservados.</p>
+      <NuxtLink
+        to="/contact"
+        class="text-accent hover:text-accent-hover transition-colors rounded"
+      >
+        Contáctame
+      </NuxtLink>
     </footer>
   </div>
 </template>

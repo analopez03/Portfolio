@@ -86,6 +86,10 @@ export default defineNuxtConfig({
           rel: "preconnect",
           href: "https://fonts.googleapis.com",
         },
+        {
+          rel: "stylesheet",
+          href: "https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css",
+        },
       ],
     },
   },
