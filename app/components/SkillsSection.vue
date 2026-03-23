@@ -33,7 +33,9 @@ const skills = [
 </script>
 
 <template>
-  <div class="h-px bg-gradient-to-r from-transparent from-[20%] via-accent to-transparent to-[80%]" />
+  <div
+    class="h-px bg-gradient-to-r from-transparent from-[20%] via-accent to-transparent to-[80%]"
+  />
 
   <section class="py-20 px-6 max-w-7xl mx-auto">
     <TheTitle>
@@ -61,7 +63,10 @@ const skills = [
             <span class="text-text-secondary" aria-label="skill name">
               {{ skill.name }}
             </span>
-            <span class="text-text-primary font-semibold" aria-label="skill level">
+            <span
+              class="text-text-primary font-semibold"
+              aria-label="skill level"
+            >
               {{ skill.level }}%
             </span>
           </div>
@@ -75,7 +80,7 @@ const skills = [
             :aria-label="`${skill.name}: ${skill.level}%`"
           >
             <div
-              class="h-2 rounded-full bg-accent"
+              class="h-2 rounded-full bg-gradient-to-r from-sky-700 to-cyan-300 mt-3"
               :style="{ width: skill.level + '%' }"
             />
           </div>
@@ -84,5 +89,7 @@ const skills = [
     </div>
   </section>
 
-  <div class="h-px bg-gradient-to-r from-transparent from-[20%] via-accent to-transparent to-[80%]" />
+  <div
+    class="h-px bg-gradient-to-r from-transparent from-[20%] via-accent to-transparent to-[80%]"
+  />
 </template>

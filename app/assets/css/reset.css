@@ -1,114 +1,49 @@
+@import "@flaticon/flaticon-uicons/css/brands/all.css";
 /* ─── Reset ────────────────────────────────────────────────────────────────── */
-
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+:root,
 html {
-  font-size: 16px;
-  -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth;
-}
-
-body {
-  min-height: 100vh;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-
-input, button, textarea, select {
-  font: inherit;
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ul, ol {
-  list-style: none;
-}
-
-button {
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-
-/* ─── Custom properties ─────────────────────────────────────────────────────── */
-
-:root {
-  /* Colores base */
-  --color-bg:         #ffffff;      
-  --color-surface:    #fdf5f8;       
-  --color-surface-2:  #fdbad5;       
-
-  /* Acento rosa */
-  --color-accent:         #c23b6e;  
-  --color-accent-hover:   #a8305d;   
-  --color-accent-subtle:  #f4d0de;   
-
-  /* Texto */
-  --color-text-primary:   #1a1018;  
-  --color-text-secondary: #6b5f65;   
-  --color-text-muted:     #afa9ac;  
-  --color-text-on-accent: #ffffff;   
-
-  /* Bordes */
-  --color-border:         #e0d0d8;   
-  --color-border-focus:   #c23b6e;   
-  --color-border-strong:  #f7a5c3;   
-
-  /* Estados semánticos */
-  --color-error:          #b03060;  
-  --color-error-bg:       #fce8f0;  
-  --color-success:        #2d7a5a;  
-  --color-success-bg:     #eaf5f0;  
-
-  /* Tipografía */
+  --color-bg:         #ffffff;
+  --color-surface:    hsl(180, 78%, 96%);
+  --color-surface-2:  #e3f3fd;
+  --color-surface-3:  #d4f8f5;
+  --color-accent:         #3b97c2;
+  --color-accent-hover:   #1a5870;
+  --color-accent-subtle:  #d0f4ec;
+  --color-text-primary:   #1a1018;
+  --color-text-secondary: #6b5f65;
+  --color-text-muted:     #464545;
+  --color-text-on-accent: #ffffff;
+  --color-border:         #d0dee0;
+  --color-border-focus:   #3baec2;
+  --color-border-strong:  #a5ebf7;
+  --color-error:          #3092b0;
+  --color-error-bg:       #e8f9fc;
+  --color-success:        #2d7a5a;
+  --color-success-bg:     #eaf5f0;
+  --color-icon: #0000;
   --font-sans:    'Inter', system-ui, sans-serif;
+  --color-surface-3:  #a5bbf7;
 }
 
-/* ─── Dark mode ─────────────────────────────────────────────────────────────── */
-
-.dark {
-  /* Colores base */
-  --color-bg:         #1a1018;      
-  --color-surface:    #2a1f25;       
-  --color-surface-2:  #3a2f35;      
-
-  /* Acento rosa */
-  --color-accent:         #c23b6e;   
-  --color-accent-hover:   #a8305d;  
-  --color-accent-subtle:  #4a3f45;  
-
-  /* Texto */
-  --color-text-primary:   #ffffff;  
-  --color-text-secondary: #afa9ac;   
-  --color-text-muted:     #6b5f65;  
-  --color-text-on-accent: #ffffff;   
-
-  /* Bordes */
-  --color-border:         #3a2f35;   
-  --color-border-focus:   #c23b6e;   
-  --color-border-strong:  #5a4f55;   
-
-  /* Estados semánticos */
-  --color-error:          #b03060;  
-  --color-error-bg:       #4a1f25;  
-  --color-success:        #2d7a5a;  
-  --color-success-bg:     #1a2f25;  
+.dark,
+html.dark {
+  --color-bg:         #000000;
+  --color-surface:    #1f262a;
+  --color-surface-2:  #2f383a;
+  --color-accent:         #3b9cc2;
+  --color-accent-hover:   #72cbee;
+  --color-accent-subtle:  #4a3f45;
+  --color-text-primary:   #ffffff;
+  --color-text-secondary: #a9aeaf;
+  --color-text-muted:     #ffffff;
+  --color-text-on-accent: #ffffff;
+  --color-border:         #2f3a3a;
+  --color-border-focus:   #3b85c2;
+  --color-border-strong:  #4f555a;
+  --color-error:          #3067b0;
+  --color-error-bg:       #4a1f25;
+  --color-success:        #2d7a5a;
+  --color-success-bg:     #1a2f25;
+  --color-icon: #ffffff00;
+  --color-surface-3:  #2e7683;
 }

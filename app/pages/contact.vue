@@ -62,7 +62,7 @@ async function submit() {
 }
 
 definePageMeta({
-  layout: "header-footer",
+  layout: "header-contact",
 });
 </script>
 
@@ -76,7 +76,7 @@ definePageMeta({
         <h1
           class="font-serif font-light leading-tight text-5xl md:text-7xl text-text-primary"
         >
-          Hablemos de<br >tu <em class="italic text-accent">proyecto.</em>
+          Hablemos de<br />tu <em class="italic text-accent">proyecto.</em>
         </h1>
         <p class="mt-4 text-sm text-text-secondary leading-relaxed max-w-sm">
           Cuéntame en qué estás trabajando. Respondo en menos de 24h.
@@ -101,7 +101,7 @@ definePageMeta({
                 placeholder="Tu nombre"
                 :aria-describedby="errors.from_name ? 'err-name' : undefined"
                 class="bg-transparent border-b border-border text-text-primary text-[13px] py-2.5 outline-none focus:border-border-focus transition-colors placeholder:text-text-muted"
-              >
+              />
               <span
                 v-if="errors.from_name"
                 id="err-name"
@@ -126,7 +126,7 @@ definePageMeta({
                 placeholder="tu@email.com"
                 :aria-describedby="errors.from_email ? 'err-email' : undefined"
                 class="bg-transparent border-b border-border text-text-primary text-[13px] py-2.5 outline-none focus:border-border-focus transition-colors placeholder:text-text-muted"
-              >
+              />
               <span
                 v-if="errors.from_email"
                 id="err-email"

@@ -5,7 +5,7 @@
     "description": "Raíces Viajeras es una aplicación web desarrollada bajo metodología Agile, cuyo objetivo es ofrecer a los usuarios una forma sencilla y atractiva de descubrir, reservar y compartir experiencias de turismo sostenible.",
     "src": "/img/proyecto1.avif",
     "technology": ["Bootstrap"],
-    "link": "https://github.com/PageCrafters/Raices-Viajeras"
+    "link": "https://pagecrafters.github.io/Raices-Viajeras/index.html"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "description": "Trabajo fin de grado de Diseño Gráfico, creación de marca propia, diseño y desarrollo de la página web",
     "src": "/img/naipe.avif",
     "technology": ["CSS", "HTML", "JavaScript"],
-    "link": "https://github.com/analopez03/naipes"
+    "link": "https://analopez03.github.io/naipes/"
   },
   {
     "id": 3,

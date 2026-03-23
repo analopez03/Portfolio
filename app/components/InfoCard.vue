@@ -12,7 +12,7 @@ const cards = [
     <div
       v-for="card in cards"
       :key="card.title"
-      class="bg-surface p-5 rounded-xl hover:shadow-md transition"
+      class="bg-surface-2 p-5 rounded-xl hover:shadow-md transition"
     >
       <div class="text-accent text-xl mb-2">
         <NuxtImg

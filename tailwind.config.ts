@@ -7,13 +7,14 @@ export default {
     "./pages/**/*.vue",
     "./app.vue",
   ],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         bg: "var(--color-bg)",
         surface: "var(--color-surface)",
         "surface-2": "var(--color-surface-2)",
+        surfacefooter: "var(--color-surface-3)",
         accent: "var(--color-accent)",
         "accent-hover": "var(--color-accent-hover)",
         "accent-subtle": "var(--color-accent-subtle)",
@@ -27,6 +28,7 @@ export default {
         "error-bg": "var(--color-error-bg)",
         success: "var(--color-success)",
         "success-bg": "var(--color-success-bg)",
+        icon: "var(--color-icon)",
       },
     },
   },
